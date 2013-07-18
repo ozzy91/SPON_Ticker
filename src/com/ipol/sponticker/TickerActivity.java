@@ -65,7 +65,6 @@ public class TickerActivity extends Activity {
 		adapter = new TickerAdapter(this, R.layout.list_event, events);
 		tickerList.setAdapter(adapter);
 
-		addIcons(match);
 
 		txtHomeTeam.setText(match.getHomeTeam());
 		txtGuestTeam.setText(match.getGuestTeam());
@@ -92,6 +91,8 @@ public class TickerActivity extends Activity {
 						TickerScrollListener myListener = new TickerScrollListener(
 								pointer, firstHalfTimeline, secondHalfTimeline);
 						tickerList.setOnScrollListener(myListener);
+						
+						addIcons(match);
 
 						firstHalfTimeline.getViewTreeObserver()
 								.removeOnGlobalLayoutListener(this);
@@ -105,6 +106,9 @@ public class TickerActivity extends Activity {
 		ArrayList<Substitution> substitutions = match.getSubstitution();
 
 		RelativeLayout layout = (RelativeLayout) findViewById(R.id.timeline_layout);
+		
+		float sizeOfMinute = firstHalfTimeline.getHeight() / 45;
+		float timelineGap = secondHalfTimeline.getBottom() - firstHalfTimeline.getTop();
 
 		for (Goal goal : goals) {
 			ImageView icon = new ImageView(this);
@@ -114,12 +118,11 @@ public class TickerActivity extends Activity {
 					R.id.timeline_first_half);
 			icon.setLayoutParams(params);
 
-			float sizeOfMinute = 320 / 45;
 			int minute = goal.getMinute();
 			if (minute < 45) {
-				icon.setTranslationY(-goal.getMinute() * sizeOfMinute);
+				icon.setTranslationY(-goal.getMinute() * sizeOfMinute - icon.getHeight() / 2);
 			} else {
-				icon.setTranslationY(-goal.getMinute() * sizeOfMinute -60);
+				icon.setTranslationY(-goal.getMinute() * sizeOfMinute + timelineGap - icon.getHeight() / 2);
 			}
 			layout.addView(icon, params);
 		}
@@ -144,12 +147,11 @@ public class TickerActivity extends Activity {
 			params.setMargins(40, 0, 0, 0);
 			icon.setLayoutParams(params);
 
-			float sizeOfMinute = 320 / 45;
 			int minute = card.getMinute();
 			if (minute < 45) {
-				icon.setTranslationY(-card.getMinute() * sizeOfMinute);
+				icon.setTranslationY(-card.getMinute() * sizeOfMinute + params.height / 2);
 			} else {
-				icon.setTranslationY(-card.getMinute() * sizeOfMinute -60);
+				icon.setTranslationY(-card.getMinute() * sizeOfMinute + timelineGap +params.height / 2);
 			}
 			layout.addView(icon, params);
 		}
@@ -163,12 +165,11 @@ public class TickerActivity extends Activity {
 			params.setMargins(80, 0, 0, 0);
 			icon.setLayoutParams(params);
 
-			float sizeOfMinute = 320 / 45;
 			int minute = substitution.getMinute();
 			if (minute < 45) {
-				icon.setTranslationY(-substitution.getMinute() * sizeOfMinute);
+				icon.setTranslationY(-substitution.getMinute() * sizeOfMinute - icon.getHeight() / 2);
 			} else {
-				icon.setTranslationY(-substitution.getMinute() * sizeOfMinute -60);
+				icon.setTranslationY(-substitution.getMinute() * sizeOfMinute + timelineGap - icon.getHeight() / 2);
 			}
 			layout.addView(icon, params);
 		}
