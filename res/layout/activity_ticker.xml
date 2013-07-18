@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TickerActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/liveticker" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_home_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Leverkusen" />
+
+        <ImageView
+            android:id="@+id/img_home_team"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/timeline_ball_2x" />
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="1:2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_guest_team"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/timeline_ball_2x" />
+
+        <TextView
+            android:id="@+id/txt_guest_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="FC Bayern" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_scorers"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="scorers" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/ticker_list"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:background="#09000000" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/timeline_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="12dp" >
+
+            <TextView
+                android:id="@+id/txt_timeline_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="4dp"
+                android:text="90." />
+
+            <TextView
+                android:id="@+id/txt_timeline_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="4dp"
+                android:text="0." />
+
+            <View
+                android:id="@+id/timeline_second_half"
+                android:layout_width="6dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/txt_timeline_minute"
+                android:background="#40000000" />
+
+            <View
+                android:id="@+id/timeline_first_half"
+                android:layout_width="6dp"
+                android:layout_height="160dp"
+                android:layout_above="@id/txt_timeline_zero"
+                android:layout_alignParentLeft="true"
+                android:background="#40000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/timeline_first_half"
+                android:layout_below="@id/timeline_second_half"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text="45." />
+
+            <View
+                android:id="@+id/timeline_pointer"
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_toRightOf="@id/timeline_first_half"
+                android:layout_alignBottom="@id/timeline_first_half"
+                android:layout_marginLeft="2dp"
+                android:background="#ff000000" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_ticker_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Quelle: kicker.de"
+        android:textSize="12sp" />
+
+</LinearLayout>

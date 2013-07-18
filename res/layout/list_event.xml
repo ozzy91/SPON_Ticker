@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_event_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/timeline_ball_2x" />
+
+        <TextView
+            android:id="@+id/txt_event_minute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="75. Minute"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_event_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Tor: 1:1, Rolfes (Bayer 04 Leverkusen)"
+        android:textColor="#77000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_event_commentary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Die erste gefährliche Ecke: Boenisch leitet einen Eckball von rechts per Kopf an den linken Pfosten weiter auf Rolfes" />
+
+</LinearLayout>

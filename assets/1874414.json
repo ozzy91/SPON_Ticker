@@ -1,0 +1,606 @@
+{
+   "PAARUNGEN" : {
+      "PAARUNG" : {
+         "SAISON" : "2012/13",
+         "AUFSTELLUNGHEIM" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "24224",
+                  "content" : "Wulnikowski"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "39068",
+                  "content" : "Stadel"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "26868",
+                  "content" : "Husterer"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "48873",
+                  "content" : "Kleineheismann"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "34121",
+                  "content" : "Stein"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "37533",
+                  "content" : "Feldhahn"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "1820",
+                  "content" : "Mehic"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "49749",
+                  "content" : "Reinhardt"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "50433",
+                  "content" : "Hahn"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "39678",
+                  "content" : "Fetsch"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "49527",
+                  "content" : "Vogler"
+               }
+            ]
+         },
+         "UHRZEIT" : "20:30",
+         "STADION" : "Sparda-Bank-Hessen-Stadion",
+         "SPIELTAG" : "3",
+         "HEIM" : {
+            "VEREINID" : "120",
+            "TRAINER" : "Arie van Lent",
+            "NATION" : "DEU",
+            "content" : "Kickers Offenbach",
+            "TRAINERID" : "4924"
+         },
+         "SPIELEREIGNISSE" : {
+            "EREIGNIS" : [
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:48:24",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Offenbacher Kickers wollen heute Abend gegen Fortuna Düsseldorf einen Coup landen. Es ist aber auch vermutlich der letzte Strohhalm für OFC-Coach Arie van Lent."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:49:39",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Dem Coach von Kickers Offenbach hilft gegen Fortuna Düsseldorf wohl nur ein Sieg, um einer bösen Weihnachtsüberraschung in Form seiner Entlassung zu entgehen."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:49:55",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "\"Wir legen uns nur auf den Dienstag fest. Da sitzt er auf der Bank\", sagte Offenbachs technischer Direktor Oliver Roth nach dem 1:5 gegen Osnabrück. Rückendeckung hört sich definitiv anders an."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:50:10",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Von solchen Sorgen frei ist Norbert Meier, der die Fortunen aus Düsseldorf zu 21 Punkten in der Hinserie der Liga führte. Trotz der auf dem Papier klaren Ausgangsposition warnt der 54-Jährige davor, den Gegner zu unterschätzen: "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:50:24",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "\"Offenbach hat mit Union Berlin und Greuther Fürth einen Zweit- und einen Erstligisten aus dem Pokal geworfen\", warnte er seine Elf vor Nachlässigkeiten. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 19:51:06",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Trotzdem dürfte auch ihm nicht entgangen sein, dass die Offenbacher zuletzt vier Niederlagen in Folge einstecken mussten und folglich nicht mit allzu großem Selbstvertrauen antreten werden."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:04:54",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Hüben wie drüben gibt es jeweils zwei Wechsel: Bei F95 spielen Levels und der in Bundesliga zuletzt gelbgesperrte Kruse für Bodzek und Bellinghausen, während beim OFC Vogler und Stadel für Rathgeber und Ahlschwede auflaufen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:11:46",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Schiedsrichter Felix Zwayer leitet die Partie am Bieberer Berg."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:30:29",
+                  "MINUTE" : "1",
+                  "KOMMENTAR" : "Der Ball rollt."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:31:08",
+                  "MINUTE" : "1",
+                  "KOMMENTAR" : "Zehn Sekunden sind gerade mal gespielt, da fährt Kleineheismann Schahin übel in die Beine und hört sich ein paar Takte vom Referee ab."
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Wieder muss Schahin einstecken, diesmal gegen Husterer. Zwayer zückt Gelb.",
+                  "VEREINID" : "120",
+                  "MINUTE" : "2",
+                  "TICKERZEIT" : "18.12.2012 20:32:31",
+                  "SPIELER" : {
+                     "SPIELERID" : "26868",
+                     "content" : "Husterer"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:34:48",
+                  "MINUTE" : "5",
+                  "KOMMENTAR" : "Die Fortunen machen erwartungsgemäß das Spiel und versuchen ihre Angriffe breit zu machen und agieren viel über die Außen. Offenbach steht jedoch durchaus stabil."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:37:38",
+                  "MINUTE" : "8",
+                  "KOMMENTAR" : "Unangenehmer Ball, doch Levels klärt zur Ecke. Bei dieser taucht Husterer in aussichtreicher Position auf, kommt dann aber nicht mehr entscheidend zum Kopfball."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:41:14",
+                  "MINUTE" : "11",
+                  "KOMMENTAR" : "Die Hessen konnten in der Anfangsphase über die rechte Seite immer wieder Nadelstiche setzen, jetzt haben die Düsseldorfer reagiert: Kruse und Reisniger haben die Seiten gewechselt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:42:58",
+                  "MINUTE" : "13",
+                  "KOMMENTAR" : "Reisinger leitet direkt weiter in den Lauf von Ilsö, der ein Stück nach vorne läuft und scharf sowie flach nach innen passt. Schahin kommt jedoch zwei Schritte zu spät und verpasst. "
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Unnötiges Handspiel an der Außenlinie. Nicht gerade klug von Kleineheismann. ",
+                  "VEREINID" : "120",
+                  "MINUTE" : "14",
+                  "TICKERZEIT" : "18.12.2012 20:44:25",
+                  "SPIELER" : {
+                     "SPIELERID" : "48873",
+                     "content" : "Kleineheismann"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:46:40",
+                  "MINUTE" : "17",
+                  "KOMMENTAR" : "Balogun lässt mit einer Drehung zwei Gegenspieler gut aussteigen, flankt im Anschluss allerdings ins Niemandsland. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:47:13",
+                  "MINUTE" : "18",
+                  "KOMMENTAR" : "Der OFC spielt leidenschaftlich und ist präsent in den Zweikämpfen. Mehr Spielanteile haben zweifelsohne die Rheinländer, die jedoch nicht wirklich zwingend sind."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:50:52",
+                  "MINUTE" : "21",
+                  "KOMMENTAR" : "Fink fällt der Ball etwas unverhofft vor die Füße. Der Mittelfeldmann zieht aus 17 Metern zentraler Position direkt ab, zielt aber ein Stück zu weit nach rechts. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:54:01",
+                  "MINUTE" : "24",
+                  "KOMMENTAR" : "Torschuss OFC! Nach einem Einwurf bekommen weder Fink noch Lambertz die Kugel geklärt, Vogler probiert es aus der Drehung aus 15 Metern. Der Ball rast gut einen Meter rechts vorbei."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:57:06",
+                  "MINUTE" : "27",
+                  "KOMMENTAR" : "Der Weckruf? Lambertz bedient Ilsö, der aus 20 Metern Wulnikowski mit einem satten Pfund auf die Probe stellt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 20:59:24",
+                  "MINUTE" : "29",
+                  "KOMMENTAR" : "Baloguns Flanke aus dem rechten Halbfeld ist leichte Beute für Wulnikowski. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:03:43",
+                  "MINUTE" : "34",
+                  "KOMMENTAR" : "Es bleibt ein Spiel auf überschaubarem Niveau. Hüben wie drüben fehlt es an zündenden Ideen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:07:13",
+                  "MINUTE" : "38",
+                  "KOMMENTAR" : "Die Fortunen zeigen sich bemüht, finden die Lücke aber nichts. Bisher dürfte der Drittligist mit dem Verlauf des Spiels wohl zufrieden sein, immerhin hatte der Favorit kaum echte Chancen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:09:00",
+                  "MINUTE" : "39",
+                  "KOMMENTAR" : "Ilsö schickt Kruse steil - Abstoß. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:11:27",
+                  "MINUTE" : "41",
+                  "KOMMENTAR" : "Aufregung auf den Tribünen, nachdem Juanan vermeintlich Fetsch gefoult hatte. Zwayer winkte jedoch ab und hatte mit seiner Entscheidung Recht. Alles sauber bei der Aktion des Spaniers."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:13:31",
+                  "MINUTE" : "43",
+                  "KOMMENTAR" : "Etwas glücklich rutscht der Ball durch zu Vogler, der sich durchtankt und im Sechzehner den Ball etwas zu weit vorlegt. Giefer boxt die Kugel weg. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:15:37",
+                  "MINUTE" : "45",
+                  "KOMMENTAR" : "Düsseldorf hatte mehr Spielanteile, mehr Ballbesitz, konnte sich aber so gut wie gar nicht offensiv durchsetzen. Auf der Gegenseite spielen die Kickers leidenschaftlich, kommen aber auch nicht zum Abschluss. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:15:59",
+                  "MINUTE" : "45",
+                  "KOMMENTAR" : "Wenn das so weiter geht, dann fallen keine Tore. Es sind aber noch 45 Minuten zu gehen. Was hat Durchgang zwei zu bieten?"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:32:10",
+                  "MINUTE" : "46",
+                  "KOMMENTAR" : "Keine Wechsel zur Pause. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:35:19",
+                  "MINUTE" : "49",
+                  "KOMMENTAR" : "Auch nach Wiederanpfiff zeigt sich das gleich Bild, oder doch nicht? Schahin kommt nach einer guten Flanke von links zum Kopfball, scheitert jedoch aus neun Metern an Wulnikowski."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:38:04",
+                  "MINUTE" : "51",
+                  "KOMMENTAR" : "Reisinger narrt Stein mit einem Übersteiger und holt dann eine Ecke heraus. Diese bringt jedoch nichts ein."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:39:38",
+                  "MINUTE" : "53",
+                  "KOMMENTAR" : "Für Mehic sieht es nicht gut aus. Der Kapitän hatte sich vertreten, dabei am Knie offenbar verletzt und benötigte dann medizinische Hilfe. Der Bosnier beißt auf die Zähne und macht weiter. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:42:20",
+                  "MINUTE" : "55",
+                  "KOMMENTAR" : "Schahin leitet auf Kruse weiter, der zum Dribbling ansetzt, von Stadel aber gestoppt wird. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:43:56",
+                  "MINUTE" : "56",
+                  "KOMMENTAR" : "Starker Pass von Feldhahn, der prima in die Gasse auf Hahn durchsteckt. Dieser zieht jedoch im Eins-gegen-Eins gegen Giefer den Kürzeren. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:47:30",
+                  "MINUTE" : "61",
+                  "KOMMENTAR" : "Die Rheinländer spielen zu statisch und haben gar keine Ideen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:48:08",
+                  "MINUTE" : "61",
+                  "KOMMENTAR" : "Und der OFC hat die Chancen! Ein langer Ball wird per Kopf zu Vogler verlängert, der aus 14 Metern in Giefer seinen Meister findet. "
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "SPEZIFISCH" : "Schahin",
+                  "KOMMENTAR" : "Meier reagiert auf die Harmlosigkeit seiner Elf mit der Hereinnahme von Rafael. ",
+                  "VEREINID" : "13",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "28615",
+                     "content" : "Rafael"
+                  },
+                  "MINUTE" : "63",
+                  "TICKERZEIT" : "18.12.2012 21:49:12",
+                  "SPEZIFISCHID" : "47251",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:49:57",
+                  "MINUTE" : "63",
+                  "KOMMENTAR" : "Nach einer Ecke prüft Balogun Wulnikowski per Kopf. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:50:55",
+                  "MINUTE" : "64",
+                  "KOMMENTAR" : "Fetsch wird im Sechzehner von Levels leicht touchiert und geht zu Boden. Die Kickers fordern Elfmeter, Zwayer sieht das anders."
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "SPEZIFISCH" : "Ilsö",
+                  "KOMMENTAR" : "Der nächste Wechsel von Meier. ",
+                  "VEREINID" : "13",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "28149",
+                     "content" : "D.-R. Cha"
+                  },
+                  "MINUTE" : "69",
+                  "TICKERZEIT" : "18.12.2012 21:55:46",
+                  "SPEZIFISCHID" : "49059",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 21:56:01",
+                  "MINUTE" : "70",
+                  "KOMMENTAR" : "Es bleibt ein tempoarmes Duell zweier Mannschaften, die sich auf Augenhöhe begegnen. Immerhin: Von einem Klassenunterschied ist nichts zu erkennen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:00:47",
+                  "MINUTE" : "74",
+                  "KOMMENTAR" : "Aus 16 Metern zentraler Position probiert es Vogler per Drehschuss - rechts vorbei. "
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Gegen Stein fährt Levels den Arm raus, bringt diesen aus der Balance und sieht dafür Gelb.",
+                  "VEREINID" : "13",
+                  "MINUTE" : "75",
+                  "TICKERZEIT" : "18.12.2012 22:01:54",
+                  "SPIELER" : {
+                     "SPIELERID" : "38475",
+                     "content" : "Levels"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "KOMMENTAR" : "Nach einer Flanke rutscht Baloguns Abwehrversuch zu Hahn durch. Dieser fackelt nicht lange und zieht aus 14 Meter fulminant ab. Giefer wehrt den strammen Schuss noch ab, gegen Fetschs Abstauber ist er aber machtlos. ",
+                  "SPIELSTAND" : "1:0",
+                  "VEREINID" : "120",
+                  "MINUTE" : "76",
+                  "TICKERZEIT" : "18.12.2012 22:03:33",
+                  "SPIELER" : {
+                     "SPIELERID" : "39678",
+                     "content" : "Fetsch"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:04:48",
+                  "MINUTE" : "78",
+                  "KOMMENTAR" : "Die Fortuna ist nun gefordert und hat noch knapp 15 Minuten (mit Nachspielzeit), um die Verlängerung zu erreichen oder das Spiel zu drehen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:05:38",
+                  "MINUTE" : "79",
+                  "KOMMENTAR" : "Balogun springt vehement in den Rücken von Hahn, der einen gewaltigen Schmerzschrei von sich lässt und dann am Boden liegen bleibt. Nach ein paar Sekunden geht's weiter. Viel Lärm um Nichts!"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:08:18",
+                  "MINUTE" : "82",
+                  "KOMMENTAR" : "Hahn entwischt auf der linken Seite und legt mit Übersicht quer in die Mitte zu Reinhardt, der jedoch verstolpert. Das war die Chance zum 2:0."
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Rüde Attacke an der Außenlinie gegen Fink. ",
+                  "VEREINID" : "120",
+                  "MINUTE" : "82",
+                  "TICKERZEIT" : "18.12.2012 22:09:20",
+                  "SPIELER" : {
+                     "SPIELERID" : "50433",
+                     "content" : "Hahn"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:10:04",
+                  "MINUTE" : "84",
+                  "KOMMENTAR" : "Der OFC macht es geschickt und versucht das Geschehen in die gegnerische Hälfte zu verlagern. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:10:37",
+                  "MINUTE" : "84",
+                  "KOMMENTAR" : "Düsseldorf agiert zudem hektisch und will es erzwingen. Das geht eindeutig auf Kosten der Präzision. "
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "KOMMENTAR" : "Die Vorentscheidung? Feldhahn treibt das Leder nach vorne und passt genau im richtigen Moment in den Lauf von Vogler, der sich bedankt und aus 14 Meter flach ins linke Eck vollendet. ",
+                  "SPIELSTAND" : "2:0",
+                  "VEREINID" : "120",
+                  "MINUTE" : "77",
+                  "TICKERZEIT" : "18.12.2012 22:12:39",
+                  "SPIELER" : {
+                     "SPIELERID" : "49527",
+                     "content" : "Vogler"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "Vogler",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "120",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "39113",
+                     "content" : "Rathgeber"
+                  },
+                  "MINUTE" : "87",
+                  "TICKERZEIT" : "18.12.2012 22:13:46",
+                  "SPEZIFISCHID" : "49527",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:14:55",
+                  "MINUTE" : "88",
+                  "KOMMENTAR" : "Die Kickers lassen sich nun Zeit, wo es nur geht. Eine Ecke wird zelebriert, verständlich bei noch zwei Minuten Spielzeit."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:16:07",
+                  "MINUTE" : "89",
+                  "KOMMENTAR" : "Über Kruse landet der Ball irgendwie bei Rafael, der einen im Weg stehenden Verteidiger anschießt. Wulnikowski war schon geschlagen. "
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "Fetsch",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "120",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "47578",
+                     "content" : "Bäcker"
+                  },
+                  "MINUTE" : "90",
+                  "TICKERZEIT" : "18.12.2012 22:17:10",
+                  "SPEZIFISCHID" : "39678",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "18.12.2012 22:17:12",
+                  "MINUTE" : "90+1",
+                  "KOMMENTAR" : "Zwei Minuten werden nachgespielt. "
+               },
+               {
+                  "VEREIN" : "Kickers Offenbach",
+                  "SPEZIFISCH" : "Reinhardt",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "120",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "40560",
+                     "content" : "M. Schwarz"
+                  },
+                  "MINUTE" : "90+2",
+                  "TICKERZEIT" : "18.12.2012 22:18:51",
+                  "SPEZIFISCHID" : "49749",
+                  "TYP" : "EINWECHSLUNG"
+               }
+            ]
+         },
+         "ZUSCHAUER" : {
+            "content" : "18400",
+            "AUSVERKAUFT" : "JA"
+         },
+         "STADIONID" : "81",
+         "KICKERID" : "1874414",
+         "SCHIEDSRICHTER" : {
+            "SCHIEDSRICHTERID" : "912",
+            "content" : "Zwayer (Berlin)"
+         },
+         "SPIELSTAND" : {
+            "BEENDET" : "JA",
+            "content" : "2:0",
+            "STATUS" : "ENDSTAND",
+            "ENDSTAND" : "2:0",
+            "HALBZEIT" : "0:0",
+            "MINUTE" : "90+4",
+            "PHASE" : "ENDE 2. HALBZEIT",
+            "ELFMETERSCHIESSEN" : "",
+            "VERLAENGERUNG" : ""
+         },
+         "GRUPPE" : "",
+         "GAST" : {
+            "VEREINID" : "13",
+            "TRAINER" : "Norbert Meier",
+            "NATION" : "DEU",
+            "content" : "Fortuna Düsseldorf",
+            "TRAINERID" : "2387"
+         },
+         "AUFSTELLUNGGAST" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "39227",
+                  "content" : "Giefer"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "49044",
+                  "content" : "Balogun"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "38475",
+                  "content" : "Levels"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "51421",
+                  "content" : "Juanan"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "38482",
+                  "content" : "J. van den Bergh"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "30512",
+                  "content" : "O. Fink"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "31070",
+                  "content" : "Lambertz"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "27450",
+                  "content" : "Reisinger"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "49059",
+                  "content" : "Ilsö"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "67339",
+                  "content" : "Kruse"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "47251",
+                  "content" : "Schahin"
+               }
+            ]
+         },
+         "DATUM" : "18.12.2012",
+         "SPIELTAGSNAME" : "Achtelfinale",
+         "WETTBEWERB" : "DFBPOKAL"
+      }
+   }
+}
