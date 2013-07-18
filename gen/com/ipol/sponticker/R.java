@@ -29,23 +29,24 @@ public final class R {
         public static final int timeline_substitution_2x=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080012;
-        public static final int img_event_icon=0x7f08000e;
+        public static final int action_settings=0x7f080013;
+        public static final int img_event_icon=0x7f08000f;
         public static final int img_guest_team=0x7f080003;
         public static final int img_home_team=0x7f080001;
         public static final int ticker_list=0x7f080006;
-        public static final int timeline_first_half=0x7f08000b;
+        public static final int timeline_first_half=0x7f08000c;
         public static final int timeline_layout=0x7f080007;
-        public static final int timeline_pointer=0x7f08000c;
-        public static final int timeline_second_half=0x7f08000a;
-        public static final int txt_event_commentary=0x7f080011;
-        public static final int txt_event_description=0x7f080010;
-        public static final int txt_event_minute=0x7f08000f;
+        public static final int timeline_pointer=0x7f08000d;
+        public static final int timeline_second_half=0x7f08000b;
+        public static final int txt_event_commentary=0x7f080012;
+        public static final int txt_event_description=0x7f080011;
+        public static final int txt_event_minute=0x7f080010;
         public static final int txt_guest_team=0x7f080004;
         public static final int txt_home_team=0x7f080000;
         public static final int txt_result=0x7f080002;
         public static final int txt_scorers=0x7f080005;
-        public static final int txt_ticker_source=0x7f08000d;
+        public static final int txt_ticker_source=0x7f08000e;
+        public static final int txt_timeline_break=0x7f08000a;
         public static final int txt_timeline_minute=0x7f080008;
         public static final int txt_timeline_zero=0x7f080009;
     }
@@ -86,8 +87,8 @@ public final class R {
          */
         public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int WhiteText=0x7f060002;
     }
 }
