@@ -13,7 +13,8 @@ public class TickerEvent implements Comparable<TickerEvent> {
 	private String commentary;
 	private String otherPlayer;
 	private String score;
-	private Player player;
+	private String player;
+	private String team;
 	private EventType type;
 
 	public int getMinute() {
@@ -56,12 +57,20 @@ public class TickerEvent implements Comparable<TickerEvent> {
 		this.score = score;
 	}
 
-	public Player getPlayer() {
+	public String getPlayer() {
 		return player;
 	}
 
-	public void setPlayer(Player player) {
+	public void setPlayer(String player) {
 		this.player = player;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String match) {
+		this.team = match;
 	}
 
 	public EventType getType() {

@@ -12,9 +12,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.ipol.sponticker.model.EventType;
-import com.ipol.sponticker.model.Goal;
 import com.ipol.sponticker.model.Match;
-import com.ipol.sponticker.model.Player;
 import com.ipol.sponticker.model.TickerEvent;
 
 public class JSonParser {
@@ -109,10 +107,9 @@ public class JSonParser {
 
 				if (jsonEvent.has(TAG_TYPE)) {
 					// set the player
-					String name = jsonEvent.getJSONObject(TAG_PLAYER)
-							.getString(TAG_NAME);
-					String team = jsonEvent.getString(TAG_TEAM);
-					event.setPlayer(new Player(name, team));
+					event.setPlayer(jsonEvent.getJSONObject(TAG_PLAYER)
+							.getString(TAG_NAME));
+					event.setTeam(jsonEvent.getString(TAG_TEAM));
 
 					// set the event type
 					String type = jsonEvent.getString(TAG_TYPE);
@@ -120,11 +117,6 @@ public class JSonParser {
 					if (type.equals(TickerEvent.TYPE_GOAL)) {
 						event.setType(EventType.GOAL);
 						event.setScore(jsonEvent.getString(TAG_SCORE));
-						Goal goal = new Goal();
-						goal.setMinute(event.getMinute());
-						goal.setAddedTime(event.getAddedTime());
-						goal.setPlayer(event.getPlayer());
-						match.addGoal(goal);
 					}
 					if (type.equals(TickerEvent.TYPE_RED)) {
 						event.setType(EventType.RED);

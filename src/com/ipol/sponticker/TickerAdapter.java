@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ipol.sponticker.model.Player;
 import com.ipol.sponticker.model.TickerEvent;
 
 public class TickerAdapter extends ArrayAdapter<TickerEvent> {
@@ -38,7 +37,6 @@ public class TickerAdapter extends ArrayAdapter<TickerEvent> {
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		TickerEvent event = mObjects.get(position);
-		Player player = event.getPlayer();
 		View view = LayoutInflater.from(mContext).inflate(layoutId, null);
 
 		txtMinute = (TextView) view.findViewById(R.id.txt_event_minute);
@@ -71,27 +69,27 @@ public class TickerAdapter extends ArrayAdapter<TickerEvent> {
 		case GOAL:
 			imgIcon.setImageResource(R.drawable.timeline_ball_2x);
 			txtDiscreption.setText("Tor: " + event.getScore() + ", "
-					+ player.getName() + " (" + player.getTeam() + ")");
+					+ event.getPlayer() + " (" + event.getTeam() + ")");
 			break;
 		case YELLOW:
 			imgIcon.setImageResource(R.drawable.timeline_card_yellow_2x);
-			txtDiscreption.setText("Gelbe Karte: " + player.getName() + " ("
-					+ player.getTeam() + ")");
+			txtDiscreption.setText("Gelbe Karte: " + event.getPlayer() + " ("
+					+ event.getTeam() + ")");
 			break;
 		case RED:
 			imgIcon.setImageResource(R.drawable.timeline_card_red_2x);
-			txtDiscreption.setText("Rote Karte: " + player.getName() + " ("
-					+ player.getTeam() + ")");
+			txtDiscreption.setText("Rote Karte: " + event.getPlayer() + " ("
+					+ event.getTeam() + ")");
 			break;
 		case YELLOWRED:
 			imgIcon.setImageResource(R.drawable.timeline_card_yellowred_2x);
-			txtDiscreption.setText("Gelb-Rote Karte: " + player.getName()
-					+ " (" + player.getTeam() + ")");
+			txtDiscreption.setText("Gelb-Rote Karte: " + event.getPlayer()
+					+ " (" + event.getTeam() + ")");
 			break;
 		case SUBSTITUTE:
 			imgIcon.setImageResource(R.drawable.timeline_substitution_2x);
-			txtDiscreption.setText("Wechsel " + player.getTeam() + ": "
-					+ player.getName() + " für " + event.getOtherPlayer());
+			txtDiscreption.setText("Wechsel " + event.getTeam() + ": "
+					+ event.getPlayer() + " für " + event.getOtherPlayer());
 			break;
 		}
 
