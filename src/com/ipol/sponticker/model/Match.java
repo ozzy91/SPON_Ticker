@@ -11,8 +11,6 @@ public class Match {
 
 	private int visitors;
 	private ArrayList<Goal> goals = new ArrayList<Goal>();
-	private ArrayList<Card> cards = new ArrayList<Card>();
-	private ArrayList<Substitution> substitutions = new ArrayList<Substitution>();
 
 	public String getHomeTeam() {
 		return homeTeam;
@@ -62,23 +60,4 @@ public class Match {
 	public ArrayList<Goal> getGoals() {
 		return goals;
 	}
-	
-	public void addCard(Card card) {
-		if (card != null)
-			cards.add(card);
-	}
-
-	public ArrayList<Card> getCards() {
-		return cards;
-	}
-	
-	public void addSubstitution(Substitution substitution) {
-		if (substitution != null)
-			substitutions.add(substitution);
-	}
-
-	public ArrayList<Substitution> getSubstitution() {
-		return substitutions;
-	}
-
 }

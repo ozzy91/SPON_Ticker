@@ -11,12 +11,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.ipol.sponticker.model.Card;
 import com.ipol.sponticker.model.EventType;
 import com.ipol.sponticker.model.Goal;
 import com.ipol.sponticker.model.Match;
 import com.ipol.sponticker.model.Player;
-import com.ipol.sponticker.model.Substitution;
 import com.ipol.sponticker.model.TickerEvent;
 
 public class JSonParser {
@@ -130,36 +128,17 @@ public class JSonParser {
 					}
 					if (type.equals(TickerEvent.TYPE_RED)) {
 						event.setType(EventType.RED);
-						Card card = new Card();
-						card.setMinute(event.getMinute());
-						card.setAddedTime(event.getAddedTime());
-						card.setColor(Card.RED);
-						match.addCard(card);
 					}
 					if (type.equals(TickerEvent.TYPE_SUBSTITUTE)) {
 						event.setType(EventType.SUBSTITUTE);
 						event.setOtherPlayer(jsonEvent
 								.getString(TAG_SUBSTITUTE_PLAYER));
-						Substitution substitution = new Substitution();
-						substitution.setMinute(event.getMinute());
-						substitution.setAddedTime(event.getAddedTime());
-						match.addSubstitution(substitution);
 					}
 					if (type.equals(TickerEvent.TYPE_YELLOW)) {
 						event.setType(EventType.YELLOW);
-						Card card = new Card();
-						card.setMinute(event.getMinute());
-						card.setAddedTime(event.getAddedTime());
-						card.setColor(Card.YELLOW);
-						match.addCard(card);
 					}
 					if (type.equals(TickerEvent.TYPE_YELLOW_RED)) {
 						event.setType(EventType.YELLOWRED);
-						Card card = new Card();
-						card.setMinute(event.getMinute());
-						card.setAddedTime(event.getAddedTime());
-						card.setColor(Card.YELLOW_RED);
-						match.addCard(card);
 					}
 				} else {
 					event.setType(EventType.NORMAL);

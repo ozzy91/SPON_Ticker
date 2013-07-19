@@ -5,5 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="liveticker">Liveticker</string>
+    <string name="minute_45">45.</string>
+    <string name="minute_0">0.</string>
+    <string name="minute_90">90.</string>
 
 </resources>
