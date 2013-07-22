@@ -4,5 +4,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="timeline_icon_size">15dp</dimen>
+    <dimen name="timeline_thickness">6dp</dimen>
 
 </resources>

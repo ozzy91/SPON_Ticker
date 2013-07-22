@@ -26,6 +26,7 @@ public class JSonParser {
 	private static final String TAG_HOME_TEAM = "HEIM";
 	private static final String TAG_GUEST_TEAM = "GAST";
 	private static final String TAG_VISITORS = "ZUSCHAUER";
+	private static final String TAG_STANDING = "SPIELSTAND";
 	private static final String TAG_NAME = "content";
 
 	// tags for events
@@ -98,7 +99,7 @@ public class JSonParser {
 
 				// check if the time is in the added time
 				if (minute.contains("+")) {
-					event.setMinute(90);
+					event.setMinute(Integer.valueOf(minute.substring(0, minute.indexOf("+"))));
 					event.setAddedTime(Integer.valueOf(minute.substring(minute
 							.indexOf("+") + 1)));
 				} else {
@@ -154,6 +155,19 @@ public class JSonParser {
 			match.setResult(matchObject.getJSONObject(TAG_SCORE).getString(TAG_NAME));
 			match.setStadium(matchObject.getString(TAG_STADIUM));
 			match.setVisitors(matchObject.getJSONObject(TAG_VISITORS).getInt(TAG_NAME));
+			matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);
+			
+			String minute = matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);
+
+			// check if the time is in the added time
+			if (minute.contains("+")) {
+				match.setMinute(Integer.valueOf(minute.substring(0, minute.indexOf("+"))));
+				match.setAddedTime(Integer.valueOf(minute.substring(minute
+						.indexOf("+") + 1)));
+			} else {
+				match.setMinute(Integer.valueOf(minute));
+			}
+			
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
