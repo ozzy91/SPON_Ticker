@@ -24,19 +24,19 @@ public class Timeline extends RelativeLayout {
 	private static int TIMELINE_ICON_SIZE;
 
 	private Context context;
-	private int minute;
+	public int minute;
 	public int timelineGap;
 	public double minuteHeight;
 
-	private View firstHalfTimeline;
-	private View secondHalfTimeline;
-	private View thirdTimeline;
+	public View firstHalfTimeline;
+	public View secondHalfTimeline;
+	public View thirdTimeline;
 	public View pointer;
 
-	private TextView txtMinuteZero;
-	private TextView txtMinuteBreak;
-	private TextView txtMinuteNinety;
-	private TextView txtMinuteEnd;
+	public TextView txtMinuteZero;
+	public TextView txtMinuteBreak;
+	public TextView txtMinuteNinety;
+	public TextView txtMinuteEnd;
 
 	private ArrayList<LinearLayout> goalIcons;
 	private List<TickerEvent> events;
@@ -186,6 +186,9 @@ public class Timeline extends RelativeLayout {
 		this.events = events;
 	}
 
+	/**
+	 * Adds the icons on the timeline for special events.
+	 */
 	public void addIcons() {
 
 		TIMELINE_ICON_SIZE = (int) context.getResources().getDimension(
@@ -199,13 +202,17 @@ public class Timeline extends RelativeLayout {
 
 			if (icon != null) {
 
-				System.out.println(minuteHeight);
-				System.out.println(timelineGap);
+				System.out.println("minuteHeight" + minuteHeight);
+				System.out.println("timelinegap" + timelineGap);
 				int minute = event.getMinute();
-				if (minute < 44) {
+				if (minute <= 45) {
 					icon.setY((int) (-event.getMinute() * minuteHeight - icon.getHeight() / 2));
-				} else {
-					icon.setY((int) (-event.getMinute() * minuteHeight - timelineGap - icon
+				} else if (minute <= 90) {
+					icon.setY((int) (-event.getMinute() * minuteHeight
+							- txtMinuteBreak.getHeight() - icon.getHeight() / 2));
+				} else if (minute > 90) {
+					icon.setY((int) (-event.getMinute() * minuteHeight
+							- txtMinuteBreak.getHeight() - txtMinuteNinety.getHeight() - icon
 							.getHeight() / 2));
 				}
 				addView(icon);
@@ -302,6 +309,7 @@ public class Timeline extends RelativeLayout {
 
 		if (events != null)
 			addIcons();
+
 	}
 
 }

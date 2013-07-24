@@ -14,15 +14,10 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
@@ -34,10 +29,7 @@ import com.ipol.sponticker.model.TickerEvent;
 public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 	private static final int SCROLL_OFFSET_TOP = 100;
-	private static final int ICON_GOAL_TOUCH_RADIUS = 20;
-	private static final int ICON_OTHER_TOUCH_RADIUS = 5;
 	private static final long HEADER_SCROLL_DELAY = 5000;
-	private static int TIMELINE_ICON_SIZE;
 
 	private Activity activity;
 
@@ -55,10 +47,6 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 	// Data
 	private Match match;
 	private ArrayList<TickerEvent> events;
-	private ArrayList<LinearLayout> goalIcons;
-
-	public float sizeOfMinute;
-	public float timelineGap;
 
 	private Timer scrollTimer;
 	private int scrollCount = 0;
@@ -106,9 +94,6 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 	 */
 	public void init() {
 
-		TIMELINE_ICON_SIZE = (int) activity.getResources().getDimension(
-				R.dimen.timeline_icon_size);
-
 		tickerList = (ListView) fragmentView.findViewById(R.id.ticker_list);
 		txtHomeTeam = (TextView) fragmentView.findViewById(R.id.txt_home_team);
 		txtGuestTeam = (TextView) fragmentView.findViewById(R.id.txt_guest_team);
@@ -150,39 +135,6 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 	}
 
 	/**
-	 * Adds the icons on the timeline for special events.
-	 * 
-	 * @param match
-	 *            The match with the information about events.
-	 */
-	public void addIcons() {
-
-		goalIcons = new ArrayList<LinearLayout>();
-
-		for (TickerEvent event : events) {
-
-			LinearLayout icon = createTimelineIcon(event);
-
-			if (icon != null) {
-
-				int minute = event.getMinute();
-				if (minute < 44) {
-					icon.setY(-event.getMinute() * sizeOfMinute - icon.getHeight() / 2);
-				} else {
-					icon.setY(-event.getMinute() * sizeOfMinute + timelineGap
-							- icon.getHeight() / 2);
-				}
-				// timelineLayout.addView(icon);
-			}
-
-		}
-
-		for (LinearLayout goalIcon : goalIcons) {
-			goalIcon.bringToFront();
-		}
-	}
-
-	/**
 	 * Scrolls to the item closest to the given minute. If there is no item at
 	 * the given minute, it scrolls to the closest one before or after
 	 * 
@@ -206,9 +158,9 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 			}
 		}
 		if (exact) {
-			// tickerList.smoothScrollToPositionFromTop(index,
-			// SCROLL_OFFSET_TOP);
+			
 			tickerList.setSelectionFromTop(index, SCROLL_OFFSET_TOP);
+			
 		} else if (index != 0) {
 
 			int earlier = events.get(index).getMinute();
@@ -233,84 +185,8 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 	}
 
 	public void scrollToEvent(TickerEvent event) {
-		
+
 		tickerList.setSelectionFromTop(events.indexOf(event), SCROLL_OFFSET_TOP);
-	}
-
-	private LinearLayout createTimelineIcon(final TickerEvent tickerEvent) {
-
-		ImageView icon = new ImageView(activity);
-		final LinearLayout linear = new LinearLayout(activity);
-		LayoutParams params = null;
-		android.widget.LinearLayout.LayoutParams iconParams = new android.widget.LinearLayout.LayoutParams(
-				TIMELINE_ICON_SIZE, TIMELINE_ICON_SIZE);
-		iconParams.gravity = Gravity.CENTER_VERTICAL;
-
-		switch (tickerEvent.getType()) {
-		case GOAL:
-			icon.setImageResource(R.drawable.timeline_ball_2x);
-			params = new LayoutParams(LayoutParams.MATCH_PARENT, TIMELINE_ICON_SIZE + 2
-					* ICON_GOAL_TOUCH_RADIUS);
-			iconParams.setMargins(0, 0, 0, 0);
-			params.setMargins(0, 0, 0, -TIMELINE_ICON_SIZE / 2 - ICON_GOAL_TOUCH_RADIUS);
-			goalIcons.add(linear);
-			break;
-		case SUBSTITUTE:
-			icon.setImageResource(R.drawable.timeline_substitution_2x);
-			params = new LayoutParams(LayoutParams.MATCH_PARENT, TIMELINE_ICON_SIZE + 2
-					* ICON_OTHER_TOUCH_RADIUS);
-			params.setMargins(0, 0, 0, -TIMELINE_ICON_SIZE / 2 - ICON_OTHER_TOUCH_RADIUS);
-			iconParams.setMargins(80, 0, 0, 0);
-			break;
-		case YELLOW:
-			icon.setImageResource(R.drawable.timeline_card_yellow_2x);
-			params = new LayoutParams(LayoutParams.MATCH_PARENT, TIMELINE_ICON_SIZE + 2
-					* ICON_OTHER_TOUCH_RADIUS);
-			params.setMargins(0, 0, 0, -TIMELINE_ICON_SIZE / 2 - ICON_OTHER_TOUCH_RADIUS);
-			iconParams.setMargins(40, 0, 0, 0);
-			break;
-		case YELLOWRED:
-			icon.setImageResource(R.drawable.timeline_card_yellowred_2x);
-			params = new LayoutParams(LayoutParams.MATCH_PARENT, TIMELINE_ICON_SIZE + 2
-					* ICON_OTHER_TOUCH_RADIUS);
-			params.setMargins(0, 0, 0, -TIMELINE_ICON_SIZE / 2 - ICON_OTHER_TOUCH_RADIUS);
-			iconParams.setMargins(40, 0, 0, 0);
-			break;
-		case RED:
-			icon.setImageResource(R.drawable.timeline_card_red_2x);
-			params = new LayoutParams(LayoutParams.MATCH_PARENT, TIMELINE_ICON_SIZE + 2
-					* ICON_OTHER_TOUCH_RADIUS);
-			params.setMargins(0, 0, 0, -TIMELINE_ICON_SIZE / 2 - ICON_OTHER_TOUCH_RADIUS);
-			iconParams.setMargins(40, 0, 0, 0);
-			break;
-		case NORMAL:
-			return null;
-		}
-
-		linear.setLayoutParams(params);
-		linear.setOrientation(LinearLayout.HORIZONTAL);
-		linear.setClickable(true);
-		linear.setOnTouchListener(new OnTouchListener() {
-
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-
-				if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
-
-					float touchedY = event.getRawY();
-					System.out.println("touched " + touchedY + " bottom "
-							+ linear.getBottom());
-					tickerList.setSelectionFromTop(events.indexOf(tickerEvent),
-							SCROLL_OFFSET_TOP);
-				}
-
-				return false;
-			}
-		});
-
-		linear.addView(icon, iconParams);
-
-		return linear;
 	}
 
 	@Override
@@ -319,12 +195,11 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		TickerScrollListener myListener = new TickerScrollListener(timeline);
 		tickerList.setOnScrollListener(myListener);
 		timeline.setIconInfo(events, this);
-		//
-		// timelineLayout.setOnTouchListener(new
-		// TimelineTouchListener(tickerList,
-		// TickerFragment.this, firstHalfTimeline, secondHalfTimeline));
-		
-		 timeline.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+
+		timeline.setOnTouchListener(new TimelineTouchListener(tickerList,
+				TickerFragment.this, timeline));
+
+		timeline.getViewTreeObserver().removeOnGlobalLayoutListener(this);
 	}
 
 	@Override

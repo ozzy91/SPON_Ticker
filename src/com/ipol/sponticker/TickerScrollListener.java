@@ -17,22 +17,22 @@ public class TickerScrollListener implements OnScrollListener {
 	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
 			int totalItemCount) {
-		
-		System.out.println("scroll");
-		System.out.println(timeline.minuteHeight);
-		System.out.println(timeline.timelineGap);
 
 		TickerEvent firstEvent = (TickerEvent) view.getAdapter().getItem(
 				firstVisibleItem + 1);
 
 		int minute = firstEvent.getMinute();
-		
 
 		if (minute <= 45) {
 			timeline.pointer.setTranslationY((int) (-minute * timeline.minuteHeight));
-		} else {
+		} else if (minute <= 90) {
 			timeline.pointer
-					.setTranslationY((int) (-minute * timeline.minuteHeight - timeline.timelineGap));
+					.setTranslationY((int) (-minute * timeline.minuteHeight - timeline.txtMinuteBreak
+							.getHeight()));
+		} else if (minute > 90) {
+			timeline.pointer.setTranslationY((int) (-minute * timeline.minuteHeight
+					- timeline.txtMinuteBreak.getHeight() - timeline.txtMinuteNinety
+					.getHeight()));
 		}
 	}
 
