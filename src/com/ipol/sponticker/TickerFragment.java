@@ -10,16 +10,16 @@ import java.util.TimerTask;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.Fragment;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.ListView;
-import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.ipol.sponticker.model.EventType;
@@ -29,7 +29,7 @@ import com.ipol.sponticker.model.TickerEvent;
 public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 	private static final int SCROLL_OFFSET_TOP = 100;
-	private static final long HEADER_SCROLL_DELAY = 5000;
+	private static final long HEADER_SCROLL_DELAY = 2000;
 
 	private Activity activity;
 
@@ -39,17 +39,22 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 	private TextView txtHomeTeam;
 	private TextView txtGuestTeam;
 	private TextView txtResult;
-	private TextView txtGoalsHome;
-	private TextView txtGoalsGuest;
+	private GoalText txtGoalsHome;
+	private GoalText txtGoalsGuest;
 
 	private Timeline timeline;
 
 	// Data
 	private Match match;
 	private ArrayList<TickerEvent> events;
+	private ArrayList<TickerEvent> goalsHome;
+	private ArrayList<TickerEvent> goalsGuest;
 
 	private Timer scrollTimer;
-	private int scrollCount = 0;
+	private int scrollPositionHome = 0;
+	private int scrollPositionGuest = 0;
+
+	InputStream is = null;
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -60,11 +65,12 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 		init();
 
-		InputStream is = null;
-		try {
-			is = activity.getAssets().open("1874414.json");
-		} catch (IOException e1) {
-			e1.printStackTrace();
+		if (is == null) {
+			try {
+				is = activity.getAssets().open("matches/1874414.json");
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
 		}
 
 		JSonParser parser = new JSonParser();
@@ -98,8 +104,8 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		txtHomeTeam = (TextView) fragmentView.findViewById(R.id.txt_home_team);
 		txtGuestTeam = (TextView) fragmentView.findViewById(R.id.txt_guest_team);
 		txtResult = (TextView) fragmentView.findViewById(R.id.txt_result);
-		txtGoalsHome = (TextView) fragmentView.findViewById(R.id.txt_goals_home);
-		txtGoalsGuest = (TextView) fragmentView.findViewById(R.id.txt_goals_guest);
+		txtGoalsHome = (GoalText) fragmentView.findViewById(R.id.txt_goals_home);
+		txtGoalsGuest = (GoalText) fragmentView.findViewById(R.id.txt_goals_guest);
 
 		timeline = (Timeline) fragmentView.findViewById(R.id.ticker_timeline);
 		timeline.getViewTreeObserver().addOnGlobalLayoutListener(this);
@@ -111,27 +117,31 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		String homeText = "";
 		String guestText = "";
 
+		goalsHome = new ArrayList<TickerEvent>();
+		goalsGuest = new ArrayList<TickerEvent>();
 		// get the goals
 		for (TickerEvent event : events) {
-			if (event.getType() == EventType.GOAL) {
-				TextView goalText = new TextView(activity);
-				goalText.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT,
-						LayoutParams.WRAP_CONTENT));
-				String tmp = event.getPlayer() + " (" + event.getMinute() + ".)\n";
-				goalText.setText(event.getPlayer() + " (" + event.getMinute() + ".)");
-				goalText.setTextColor(Color.WHITE);
+			if (event.getType() == EventType.GOAL)
 				if (event.getTeam().equals(match.getHomeTeam())) {
-					homeText += tmp;
-					homeText += tmp;
+					goalsHome.add(event);
 				} else {
-					guestText += tmp;
+					goalsGuest.add(event);
 				}
-			}
+		}
+		Collections.reverse(goalsHome);
+		Collections.reverse(goalsGuest);
+
+		for (TickerEvent goal : goalsHome) {
+			String tmp = goal.getPlayer() + " (" + goal.getMinute() + ".)\n";
+			homeText += tmp;
+		}
+		for (TickerEvent goal : goalsGuest) {
+			String tmp = goal.getPlayer() + " (" + goal.getMinute() + ".)\n";
+			guestText += tmp;
 		}
 
 		txtGoalsHome.setText(homeText);
 		txtGoalsGuest.setText(guestText);
-
 	}
 
 	/**
@@ -158,9 +168,9 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 			}
 		}
 		if (exact) {
-			
+
 			tickerList.setSelectionFromTop(index, SCROLL_OFFSET_TOP);
-			
+
 		} else if (index != 0) {
 
 			int earlier = events.get(index).getMinute();
@@ -218,14 +228,86 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 					@Override
 					public void run() {
 
-						scrollCount++;
-						if (scrollCount >= txtGoalsHome.getLayout().getLineCount() - 1) {
-							scrollCount = 0;
+						ObjectAnimator animator;
+
+						if (goalsHome.size() > scrollPositionHome + 2
+								&& goalsGuest.size() > scrollPositionGuest + 2) {
+							// both teams have more than two goals
+
+							TickerEvent nextGoalHome = goalsHome
+									.get(scrollPositionHome + 2);
+							TickerEvent nextGoalGuest = goalsGuest
+									.get(scrollPositionGuest + 2);
+							if (nextGoalHome.getMinute() < nextGoalGuest.getMinute()) {
+								scrollPositionHome++;
+
+								animator = ObjectAnimator.ofInt(txtGoalsHome,
+										"scrollPosition", txtGoalsHome.getLayout()
+												.getLineTop(scrollPositionHome));
+								animator.start();
+
+							} else {
+								scrollPositionGuest++;
+								animator = ObjectAnimator.ofInt(txtGoalsGuest,
+										"scrollPosition", txtGoalsGuest.getLayout()
+												.getLineTop(scrollPositionGuest));
+								animator.start();
+							}
+
+						} else if (goalsHome.size() > scrollPositionHome + 2) {
+							// only home team has more than two goals
+
+							scrollPositionHome++;
+							animator = ObjectAnimator.ofInt(txtGoalsHome,
+									"scrollPosition", txtGoalsHome.getLayout()
+											.getLineTop(scrollPositionHome));
+							animator.start();
+
+						} else if (goalsGuest.size() > scrollPositionGuest + 2) {
+							// only guest team has more than two goals
+
+							scrollPositionGuest++;
+							animator = ObjectAnimator.ofInt(txtGoalsGuest,
+									"scrollPosition", txtGoalsGuest.getLayout()
+											.getLineTop(scrollPositionGuest));
+							animator.start();
+
+						} else {
+							// both teams don't have more than two goals left
+
+							int currentHomePosition = txtGoalsHome.getLayout()
+									.getLineTop(scrollPositionHome);
+							int currentGuestPosition = txtGoalsGuest.getLayout()
+									.getLineTop(scrollPositionHome);
+
+							// animations to scroll the text out of sight
+
+							ObjectAnimator scrollHomeOut = ObjectAnimator.ofInt(
+									txtGoalsHome, "scrollPosition", currentHomePosition,
+									currentHomePosition + 100);
+
+							ObjectAnimator scrollGuestOut = ObjectAnimator.ofInt(
+									txtGoalsGuest, "scrollPosition",
+									currentGuestPosition, currentGuestPosition + 100);
+
+							scrollPositionHome = 0;
+							scrollPositionGuest = 0;
+
+							ObjectAnimator scrollHomeIn = ObjectAnimator.ofInt(
+									txtGoalsHome, "scrollPosition", -100, txtGoalsHome
+											.getLayout().getLineTop(scrollPositionHome));
+
+							ObjectAnimator scrollGuestIn = ObjectAnimator.ofInt(
+									txtGoalsGuest, "scrollPosition", -100, txtGoalsGuest
+											.getLayout().getLineTop(scrollPositionHome));
+
+							AnimatorSet set = new AnimatorSet();
+							set.play(scrollHomeOut).with(scrollGuestOut);
+							set.play(scrollHomeIn).with(scrollGuestIn);
+							set.play(scrollHomeIn).after(scrollHomeOut);
+
+							set.start();
 						}
-
-						txtGoalsHome.scrollTo(0,
-								txtGoalsHome.getLayout().getLineTop(scrollCount));
-
 					}
 				});
 			}
@@ -239,5 +321,9 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		scrollTimer.cancel();
 		scrollTimer.purge();
 		System.out.println("Task cancelled");
+	}
+
+	public void parseMatch(InputStream is) {
+		this.is = is;
 	}
 }

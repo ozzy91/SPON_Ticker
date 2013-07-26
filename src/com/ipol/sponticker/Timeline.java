@@ -202,8 +202,6 @@ public class Timeline extends RelativeLayout {
 
 			if (icon != null) {
 
-				System.out.println("minuteHeight" + minuteHeight);
-				System.out.println("timelinegap" + timelineGap);
 				int minute = event.getMinute();
 				if (minute <= 45) {
 					icon.setY((int) (-event.getMinute() * minuteHeight - icon.getHeight() / 2));

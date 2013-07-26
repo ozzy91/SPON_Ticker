@@ -38,9 +38,9 @@ public class JSonParser {
 	private static final String TAG_TEAM = "VEREIN";
 	private static final String TAG_SUBSTITUTE_PLAYER = "SPEZIFISCH";
 	private static final String TAG_SCORE = "SPIELSTAND";
-	
+
 	private Match match;
-	
+
 	public JSonParser() {
 		match = new Match();
 	}
@@ -50,8 +50,8 @@ public class JSonParser {
 		JSONObject jsonObject = null;
 
 		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
-					stream, "ISO-8859-1"), 8);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(stream,
+					"ISO-8859-1"), 8);
 			StringBuilder sb = new StringBuilder();
 
 			String line = null;
@@ -75,9 +75,8 @@ public class JSonParser {
 		JSONArray array = null;
 
 		try {
-			array = object.getJSONObject(TAG_PAARUNGEN)
-					.getJSONObject(TAG_PAARUNG).getJSONObject(TAG_MATCH_EVENTS)
-					.getJSONArray(TAG_EVENTS);
+			array = object.getJSONObject(TAG_PAARUNGEN).getJSONObject(TAG_PAARUNG)
+					.getJSONObject(TAG_MATCH_EVENTS).getJSONArray(TAG_EVENTS);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -99,7 +98,8 @@ public class JSonParser {
 
 				// check if the time is in the added time
 				if (minute.contains("+")) {
-					event.setMinute(Integer.valueOf(minute.substring(0, minute.indexOf("+"))));
+					event.setMinute(Integer.valueOf(minute.substring(0,
+							minute.indexOf("+"))));
 					event.setAddedTime(Integer.valueOf(minute.substring(minute
 							.indexOf("+") + 1)));
 				} else {
@@ -108,8 +108,8 @@ public class JSonParser {
 
 				if (jsonEvent.has(TAG_TYPE)) {
 					// set the player
-					event.setPlayer(jsonEvent.getJSONObject(TAG_PLAYER)
-							.getString(TAG_NAME));
+					event.setPlayer(jsonEvent.getJSONObject(TAG_PLAYER).getString(
+							TAG_NAME));
 					event.setTeam(jsonEvent.getString(TAG_TEAM));
 
 					// set the event type
@@ -124,8 +124,7 @@ public class JSonParser {
 					}
 					if (type.equals(TickerEvent.TYPE_SUBSTITUTE)) {
 						event.setType(EventType.SUBSTITUTE);
-						event.setOtherPlayer(jsonEvent
-								.getString(TAG_SUBSTITUTE_PLAYER));
+						event.setOtherPlayer(jsonEvent.getString(TAG_SUBSTITUTE_PLAYER));
 					}
 					if (type.equals(TickerEvent.TYPE_YELLOW)) {
 						event.setType(EventType.YELLOW);
@@ -145,33 +144,35 @@ public class JSonParser {
 	}
 
 	public Match getMatch(JSONObject object) {
-		
+
 		JSONObject matchObject;
 		try {
-			matchObject = object.getJSONObject(TAG_PAARUNGEN)
-					.getJSONObject(TAG_PAARUNG);
-			match.setGuestTeam(matchObject.getJSONObject(TAG_GUEST_TEAM).getString(TAG_NAME));
-			match.setHomeTeam(matchObject.getJSONObject(TAG_HOME_TEAM).getString(TAG_NAME));
+			matchObject = object.getJSONObject(TAG_PAARUNGEN).getJSONObject(TAG_PAARUNG);
+			match.setGuestTeam(matchObject.getJSONObject(TAG_GUEST_TEAM).getString(
+					TAG_NAME));
+			match.setHomeTeam(matchObject.getJSONObject(TAG_HOME_TEAM)
+					.getString(TAG_NAME));
 			match.setResult(matchObject.getJSONObject(TAG_SCORE).getString(TAG_NAME));
 			match.setStadium(matchObject.getString(TAG_STADIUM));
-			match.setVisitors(matchObject.getJSONObject(TAG_VISITORS).getInt(TAG_NAME));
+			if (matchObject.getJSONObject(TAG_VISITORS).has(TAG_NAME))
+				match.setVisitors(matchObject.getJSONObject(TAG_VISITORS)
+						.getInt(TAG_NAME));
 			matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);
-			
+
 			String minute = matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);
 
 			// check if the time is in the added time
 			if (minute.contains("+")) {
 				match.setMinute(Integer.valueOf(minute.substring(0, minute.indexOf("+"))));
-				match.setAddedTime(Integer.valueOf(minute.substring(minute
-						.indexOf("+") + 1)));
+				match.setAddedTime(Integer.valueOf(minute.substring(minute.indexOf("+") + 1)));
 			} else {
 				match.setMinute(Integer.valueOf(minute));
 			}
-			
+
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		
+
 		return match;
 	}
 }

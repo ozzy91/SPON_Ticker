@@ -1,0 +1,416 @@
+{
+   "PAARUNGEN" : {
+      "PAARUNG" : {
+         "SAISON" : "2012/13",
+         "AUFSTELLUNGHEIM" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "27660",
+                  "content" : "Aouate"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "47452",
+                  "content" : "Shpungin"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "72786",
+                  "content" : "Tibi"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "31265",
+                  "content" : "Ben Haim"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "59314",
+                  "content" : "Gershon"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "42352",
+                  "content" : "Natcho"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "47453",
+                  "content" : "Yeini"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "42459",
+                  "content" : "Kayal"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "42454",
+                  "content" : "Melikson"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "42455",
+                  "content" : "Hemed"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "42463",
+                  "content" : "Ben Basat"
+               }
+            ]
+         },
+         "UHRZEIT" : "13:45",
+         "STADION" : "Ramat-Gan-Stadium",
+         "SPIELTAG" : "5",
+         "HEIM" : {
+            "VEREINID" : "1320",
+            "TRAINER" : "",
+            "NATION" : "ISR",
+            "content" : "Israel",
+            "TRAINERID" : ""
+         },
+         "SPIELEREIGNISSE" : {
+            "EREIGNIS" : [
+               {
+                  "VEREIN" : "Portugal",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "0:1",
+                  "VEREINID" : "1323",
+                  "MINUTE" : "2",
+                  "TICKERZEIT" : "22.03.2013 13:47:08",
+                  "SPIELER" : {
+                     "SPIELERID" : "30762",
+                     "content" : "Bruno Alves"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "1:1",
+                  "VEREINID" : "1320",
+                  "MINUTE" : "24",
+                  "TICKERZEIT" : "22.03.2013 14:09:08",
+                  "SPIELER" : {
+                     "SPIELERID" : "42455",
+                     "content" : "Hemed"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "MINUTE" : "28",
+                  "TICKERZEIT" : "22.03.2013 14:13:08",
+                  "SPIELER" : {
+                     "SPIELERID" : "42459",
+                     "content" : "Kayal"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "2:1",
+                  "VEREINID" : "1320",
+                  "MINUTE" : "40",
+                  "TICKERZEIT" : "22.03.2013 14:25:08",
+                  "SPIELER" : {
+                     "SPIELERID" : "42463",
+                     "content" : "Ben Basat"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "MINUTE" : "44",
+                  "TICKERZEIT" : "22.03.2013 14:29:08",
+                  "SPIELER" : {
+                     "SPIELERID" : "42455",
+                     "content" : "Hemed"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "MINUTE" : "58",
+                  "TICKERZEIT" : "22.03.2013 15:00:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "46220",
+                     "content" : "Fabio Coentrao"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "MINUTE" : "58",
+                  "TICKERZEIT" : "22.03.2013 15:00:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "42454",
+                     "content" : "Melikson"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "Miguel Veloso",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "30772",
+                     "content" : "Carlos Martins"
+                  },
+                  "MINUTE" : "60",
+                  "TICKERZEIT" : "22.03.2013 15:02:13",
+                  "SPEZIFISCHID" : "41427",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "Silvestre Varela",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "41416",
+                     "content" : "Vieirinha"
+                  },
+                  "MINUTE" : "60",
+                  "TICKERZEIT" : "22.03.2013 15:02:13",
+                  "SPEZIFISCHID" : "40082",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "Hemed",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "60532",
+                     "content" : "Atar"
+                  },
+                  "MINUTE" : "63",
+                  "TICKERZEIT" : "22.03.2013 15:05:13",
+                  "SPEZIFISCHID" : "42455",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "MINUTE" : "66",
+                  "TICKERZEIT" : "22.03.2013 15:08:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "30772",
+                     "content" : "Carlos Martins"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "3:1",
+                  "VEREINID" : "1320",
+                  "MINUTE" : "70",
+                  "TICKERZEIT" : "22.03.2013 15:12:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "59314",
+                     "content" : "Gershon"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "3:2",
+                  "VEREINID" : "1323",
+                  "MINUTE" : "72",
+                  "TICKERZEIT" : "22.03.2013 15:14:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "27141",
+                     "content" : "Helder Postiga"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "MINUTE" : "72",
+                  "TICKERZEIT" : "22.03.2013 15:14:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "30256",
+                     "content" : "Cristiano Ronaldo"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "Melikson",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "42461",
+                     "content" : "Refaelov"
+                  },
+                  "MINUTE" : "73",
+                  "TICKERZEIT" : "22.03.2013 15:15:13",
+                  "SPEZIFISCHID" : "42454",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "SPEZIFISCH" : "Bruno Alves",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1323",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "30274",
+                     "content" : "Hugo Almeida"
+                  },
+                  "MINUTE" : "74",
+                  "TICKERZEIT" : "22.03.2013 15:16:13",
+                  "SPEZIFISCHID" : "30762",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Israel",
+                  "SPEZIFISCH" : "Ben Basat",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "1320",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "27674",
+                     "content" : "Benayoun"
+                  },
+                  "MINUTE" : "81",
+                  "TICKERZEIT" : "22.03.2013 15:23:13",
+                  "SPEZIFISCHID" : "42463",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Portugal",
+                  "KOMMENTAR" : {},
+                  "SPIELSTAND" : "3:3",
+                  "VEREINID" : "1323",
+                  "MINUTE" : "90+2",
+                  "TICKERZEIT" : "22.03.2013 15:34:13",
+                  "SPIELER" : {
+                     "SPIELERID" : "46220",
+                     "content" : "Fabio Coentrao"
+                  },
+                  "TYP" : "TOR"
+               }
+            ]
+         },
+         "ZUSCHAUER" : {
+            "AUSVERKAUFT" : "NEIN"
+         },
+         "STADIONID" : "551",
+         "KICKERID" : "1243075",
+         "SCHIEDSRICHTER" : {
+            "SCHIEDSRICHTERID" : "1608",
+            "content" : "Lannoy (Frankreich)"
+         },
+         "SPIELSTAND" : {
+            "BEENDET" : "JA",
+            "content" : "3:3",
+            "STATUS" : "ENDSTAND",
+            "ENDSTAND" : "3:3",
+            "HALBZEIT" : "2:1",
+            "MINUTE" : "90+6",
+            "PHASE" : "ENDE 2. HALBZEIT",
+            "ELFMETERSCHIESSEN" : "",
+            "VERLAENGERUNG" : ""
+         },
+         "GRUPPE" : "Gruppe F",
+         "GAST" : {
+            "VEREINID" : "1323",
+            "TRAINER" : "",
+            "NATION" : "PRT",
+            "content" : "Portugal",
+            "TRAINERID" : ""
+         },
+         "AUFSTELLUNGGAST" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "41425",
+                  "content" : "Rui Patricio"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "30774",
+                  "content" : "Joao Pereira"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "30762",
+                  "content" : "Bruno Alves"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "46220",
+                  "content" : "Fabio Coentrao"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "31629",
+                  "content" : "Pepe"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "31631",
+                  "content" : "Raul Meireles"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "41427",
+                  "content" : "Miguel Veloso"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "36208",
+                  "content" : "Joao Moutinho"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "40082",
+                  "content" : "Silvestre Varela"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "27141",
+                  "content" : "Helder Postiga"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "30256",
+                  "content" : "Cristiano Ronaldo"
+               }
+            ]
+         },
+         "DATUM" : "22.3.2013",
+         "SPIELTAGSNAME" : "5. Spieltag",
+         "WETTBEWERB" : "WMQUALI"
+      }
+   }
+}

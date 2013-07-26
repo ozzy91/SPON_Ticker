@@ -390,6 +390,58 @@
                   "TYP" : "TOR"
                },
                {
+                  "VEREIN" : "Kickers Offenbach",
+                  "KOMMENTAR" : "Nach einer Flanke rutscht Baloguns Abwehrversuch zu Hahn durch. Dieser fackelt nicht lange und zieht aus 14 Meter fulminant ab. Giefer wehrt den strammen Schuss noch ab, gegen Fetschs Abstauber ist er aber machtlos. ",
+                  "SPIELSTAND" : "2:0",
+                  "VEREINID" : "120",
+                  "MINUTE" : "76",
+                  "TICKERZEIT" : "18.12.2012 22:03:33",
+                  "SPIELER" : {
+                     "SPIELERID" : "39678",
+                     "content" : "Fetsch"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "KOMMENTAR" : "Nach einer Flanke rutscht Baloguns Abwehrversuch zu Hahn durch. Dieser fackelt nicht lange und zieht aus 14 Meter fulminant ab. Giefer wehrt den strammen Schuss noch ab, gegen Fetschs Abstauber ist er aber machtlos. ",
+                  "SPIELSTAND" : "2:1",
+                  "VEREINID" : "13",
+                  "MINUTE" : "77",
+                  "TICKERZEIT" : "18.12.2012 22:03:33",
+                  "SPIELER" : {
+                     "SPIELERID" : "38475",
+                     "content" : "Levels"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "KOMMENTAR" : "Nach einer Flanke rutscht Baloguns Abwehrversuch zu Hahn durch. Dieser fackelt nicht lange und zieht aus 14 Meter fulminant ab. Giefer wehrt den strammen Schuss noch ab, gegen Fetschs Abstauber ist er aber machtlos. ",
+                  "SPIELSTAND" : "2:2",
+                  "VEREINID" : "13",
+                  "MINUTE" : "78",
+                  "TICKERZEIT" : "18.12.2012 22:03:33",
+                  "SPIELER" : {
+                     "SPIELERID" : "38475",
+                     "content" : "Levels2"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Fortuna Düsseldorf",
+                  "KOMMENTAR" : "Nach einer Flanke rutscht Baloguns Abwehrversuch zu Hahn durch. Dieser fackelt nicht lange und zieht aus 14 Meter fulminant ab. Giefer wehrt den strammen Schuss noch ab, gegen Fetschs Abstauber ist er aber machtlos. ",
+                  "SPIELSTAND" : "2:3",
+                  "VEREINID" : "13",
+                  "MINUTE" : "79",
+                  "TICKERZEIT" : "18.12.2012 22:03:33",
+                  "SPIELER" : {
+                     "SPIELERID" : "38475",
+                     "content" : "Levels3"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
                   "SPIELER" : {},
                   "TICKERZEIT" : "18.12.2012 22:04:48",
                   "MINUTE" : "78",
@@ -435,7 +487,7 @@
                {
                   "VEREIN" : "Kickers Offenbach",
                   "KOMMENTAR" : "Die Vorentscheidung? Feldhahn treibt das Leder nach vorne und passt genau im richtigen Moment in den Lauf von Vogler, der sich bedankt und aus 14 Meter flach ins linke Eck vollendet. ",
-                  "SPIELSTAND" : "2:0",
+                  "SPIELSTAND" : "3:3",
                   "VEREINID" : "120",
                   "MINUTE" : "77",
                   "TICKERZEIT" : "18.12.2012 22:12:39",
@@ -522,9 +574,9 @@
          },
          "SPIELSTAND" : {
             "BEENDET" : "JA",
-            "content" : "2:0",
+            "content" : "3:3",
             "STATUS" : "ENDSTAND",
-            "ENDSTAND" : "2:0",
+            "ENDSTAND" : "3:3",
             "HALBZEIT" : "0:0",
             "MINUTE" : "90+4",
             "PHASE" : "ENDE 2. HALBZEIT",

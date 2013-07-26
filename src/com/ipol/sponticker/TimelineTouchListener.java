@@ -26,6 +26,9 @@ public class TimelineTouchListener implements OnTouchListener {
 				|| event.getActionMasked() == MotionEvent.ACTION_MOVE) {
 			float touchedY = event.getY();
 
+			timeline.pointer.setTranslationY(touchedY - timeline.getHeight()
+					+ timeline.txtMinuteZero.getHeight());
+
 			// if user clicks on the 0 minutes label
 			if (touchedY < timeline.txtMinuteZero.getBottom()
 					&& touchedY > timeline.txtMinuteZero.getTop()) {
@@ -51,7 +54,6 @@ public class TimelineTouchListener implements OnTouchListener {
 					&& touchedY < timeline.txtMinuteNinety.getBottom()
 					&& touchedY > timeline.txtMinuteNinety.getTop()) {
 				fragment.scrollToMinute(90);
-				System.out.println("touched 90");
 			}
 
 			// if user clicks on the timeline
@@ -59,25 +61,22 @@ public class TimelineTouchListener implements OnTouchListener {
 
 				// clicked on the firstHalfTimeline
 				if (touchedY > timeline.firstHalfTimeline.getTop()) {
+
 					double minute = (touchedY - timeline.firstHalfTimeline.getTop())
 							/ timeline.minuteHeight;
 					fragment.scrollToMinute(45 - (int) minute);
-					System.out.println("first timeline clicked");
-					System.out.println(minute);
 
 				} else if (touchedY > timeline.secondHalfTimeline.getTop()) {
 					// clicked on the secondHalfTime
 					double minute = (touchedY - timeline.secondHalfTimeline.getTop())
 							/ timeline.minuteHeight;
 					fragment.scrollToMinute(90 - (int) minute);
-					System.out.println("second timeline clicked");
 
 				} else if (touchedY > timeline.thirdTimeline.getTop()) {
 					// clicked on the third timeline
 					double minute = (touchedY - timeline.thirdTimeline.getTop())
 							/ timeline.minuteHeight;
 					fragment.scrollToMinute(120 - (int) minute);
-					System.out.println("third timeline clicked");
 				}
 
 			}
