@@ -20,7 +20,7 @@ import com.ipol.sponticker.model.TickerEvent;
 public class Timeline extends RelativeLayout {
 
 	private static final int ICON_GOAL_TOUCH_RADIUS = 20;
-	private static final int ICON_OTHER_TOUCH_RADIUS = 5;
+	private static final int ICON_OTHER_TOUCH_RADIUS = 8;
 	private static int TIMELINE_ICON_SIZE;
 
 	private Context context;
@@ -99,7 +99,7 @@ public class Timeline extends RelativeLayout {
 
 								// remove listener, not needed after first call
 								txtMinuteBreak.getViewTreeObserver()
-										.removeOnGlobalLayoutListener(this);
+										.removeGlobalOnLayoutListener(this);
 
 							}
 						});
@@ -148,7 +148,7 @@ public class Timeline extends RelativeLayout {
 
 							// remove listener, not needed after first call
 							txtMinuteBreak.getViewTreeObserver()
-									.removeOnGlobalLayoutListener(this);
+									.removeGlobalOnLayoutListener(this);
 						}
 					});
 
@@ -162,7 +162,7 @@ public class Timeline extends RelativeLayout {
 						public void onGlobalLayout() {
 							doOnGlobalLayout();
 							txtMinuteEnd.getViewTreeObserver()
-									.removeOnGlobalLayoutListener(this);
+									.removeGlobalOnLayoutListener(this);
 						}
 					});
 		}
@@ -284,10 +284,13 @@ public class Timeline extends RelativeLayout {
 
 				if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
 
+					pointer.setTranslationY(linear.getY() - getHeight()
+							+ txtMinuteZero.getHeight() + linear.getHeight() / 2);
+					
 					fragment.scrollToEvent(tickerEvent);
 				}
 
-				return false;
+				return true;
 			}
 		});
 
@@ -309,5 +312,4 @@ public class Timeline extends RelativeLayout {
 			addIcons();
 
 	}
-
 }
