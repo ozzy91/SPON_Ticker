@@ -19,7 +19,7 @@ public class OnTimelineTouchListener implements OnTouchListener {
 	private float currY;
 	private float diffX;
 	private float diffY;
-	
+
 	private boolean scrollVertical;
 
 	public OnTimelineTouchListener(ListView list, TickerFragment tickerFragment,
@@ -31,32 +31,36 @@ public class OnTimelineTouchListener implements OnTouchListener {
 	}
 
 	public boolean onTouch(View v, MotionEvent event) {
-		
-		if(event.getActionMasked() == MotionEvent.ACTION_DOWN){
+
+		if (event.getActionMasked() == MotionEvent.ACTION_DOWN) {
 			lastX = event.getRawX();
 			lastY = event.getRawY();
 		}
-		if(event.getActionMasked() == MotionEvent.ACTION_MOVE){
+		if (event.getActionMasked() == MotionEvent.ACTION_MOVE) {
 			currX = event.getRawX();
 			currY = event.getRawY();
 			diffX = currX - lastX;
 			diffY = currY - lastY;
-			
+
 			if (Math.abs(diffY) > Math.abs(diffX))
 				scrollVertical = true;
 			else
 				scrollVertical = false;
 		}
-		
-		if (scrollVertical && (event.getActionMasked() == MotionEvent.ACTION_DOWN
-				|| event.getActionMasked() == MotionEvent.ACTION_MOVE)) {
-			
+
+		if (scrollVertical
+				&& (event.getActionMasked() == MotionEvent.ACTION_DOWN || event
+						.getActionMasked() == MotionEvent.ACTION_MOVE)) {
+
 			v.getParent().requestDisallowInterceptTouchEvent(true);
-			
+
 			float touchedY = event.getY();
 
-			timeline.pointer.setTranslationY(touchedY - timeline.getHeight()
-					+ timeline.txtMinuteZero.getHeight());
+			// move the pointer, but only if it's within the timeline bounds
+			if (touchedY < timeline.txtMinuteZero.getTop()
+					&& touchedY > timeline.txtMinuteEnd.getBottom())
+				timeline.pointer.setTranslationY(touchedY - timeline.getHeight()
+						+ timeline.txtMinuteZero.getHeight());
 
 			// if user clicks on the 0 minutes label
 			if (touchedY < timeline.txtMinuteZero.getBottom()
@@ -101,7 +105,8 @@ public class OnTimelineTouchListener implements OnTouchListener {
 							/ timeline.minuteHeight;
 					fragment.scrollToMinute(90 - (int) minute);
 
-				} else if (timeline.thirdTimeline != null && touchedY > timeline.thirdTimeline.getTop()) {
+				} else if (timeline.thirdTimeline != null
+						&& touchedY > timeline.thirdTimeline.getTop()) {
 					// clicked on the third timeline
 					double minute = (touchedY - timeline.thirdTimeline.getTop())
 							/ timeline.minuteHeight;
