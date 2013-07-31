@@ -5,25 +5,54 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ListView;
 
-public class TimelineTouchListener implements OnTouchListener {
+import com.ipol.sponticker.gui.TickerFragment;
+import com.ipol.sponticker.gui.TimelineView;
+
+public class OnTimelineTouchListener implements OnTouchListener {
 
 	private ListView list;
 	private TickerFragment fragment;
-	private Timeline timeline;
+	private TimelineView timeline;
+	private float lastX;
+	private float lastY;
+	private float currX;
+	private float currY;
+	private float diffX;
+	private float diffY;
+	
+	private boolean scrollVertical;
 
-	public TimelineTouchListener(ListView list, TickerFragment tickerFragment,
-			Timeline timeline) {
+	public OnTimelineTouchListener(ListView list, TickerFragment tickerFragment,
+			TimelineView timeline) {
 
 		this.list = list;
 		this.fragment = tickerFragment;
 		this.timeline = timeline;
 	}
 
-	@Override
 	public boolean onTouch(View v, MotionEvent event) {
-
-		if (event.getActionMasked() == MotionEvent.ACTION_DOWN
-				|| event.getActionMasked() == MotionEvent.ACTION_MOVE) {
+		
+		if(event.getActionMasked() == MotionEvent.ACTION_DOWN){
+			lastX = event.getRawX();
+			lastY = event.getRawY();
+		}
+		if(event.getActionMasked() == MotionEvent.ACTION_MOVE){
+			currX = event.getRawX();
+			currY = event.getRawY();
+			diffX = currX - lastX;
+			diffY = currY - lastY;
+			
+			if (Math.abs(diffY) > Math.abs(diffX))
+				scrollVertical = true;
+			else
+				scrollVertical = false;
+		}
+		
+		if (scrollVertical && (event.getActionMasked() == MotionEvent.ACTION_DOWN
+				|| event.getActionMasked() == MotionEvent.ACTION_MOVE)) {
+			
+			v.getParent().requestDisallowInterceptTouchEvent(true);
+			
 			float touchedY = event.getY();
 
 			timeline.pointer.setTranslationY(touchedY - timeline.getHeight()
@@ -72,7 +101,7 @@ public class TimelineTouchListener implements OnTouchListener {
 							/ timeline.minuteHeight;
 					fragment.scrollToMinute(90 - (int) minute);
 
-				} else if (touchedY > timeline.thirdTimeline.getTop()) {
+				} else if (timeline.thirdTimeline != null && touchedY > timeline.thirdTimeline.getTop()) {
 					// clicked on the third timeline
 					double minute = (touchedY - timeline.thirdTimeline.getTop())
 							/ timeline.minuteHeight;
@@ -80,7 +109,6 @@ public class TimelineTouchListener implements OnTouchListener {
 				}
 
 			}
-
 		}
 
 		return true;

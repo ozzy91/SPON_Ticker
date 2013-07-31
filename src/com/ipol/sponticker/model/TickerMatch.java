@@ -1,10 +1,14 @@
 package com.ipol.sponticker.model;
 
 
-public class Match {
+public class TickerMatch {
 
 	private String homeTeam;
 	private String guestTeam;
+	private String homeId;
+	private String guestId;
+	private String homeShortname;
+	private String guestShortname;
 	private String stadium;
 	private String result;
 	private int minute;
@@ -26,6 +30,38 @@ public class Match {
 
 	public void setGuestTeam(String guestTeam) {
 		this.guestTeam = guestTeam;
+	}
+
+	public String getHomeId() {
+		return homeId;
+	}
+
+	public void setHomeId(String homeId) {
+		this.homeId = homeId;
+	}
+
+	public String getGuestId() {
+		return guestId;
+	}
+
+	public void setGuestId(String guestId) {
+		this.guestId = guestId;
+	}
+
+	public String getHomeShortname() {
+		return homeShortname;
+	}
+
+	public void setHomeShortname(String homeShortname) {
+		this.homeShortname = homeShortname;
+	}
+
+	public String getGuestShortname() {
+		return guestShortname;
+	}
+
+	public void setGuestShortname(String guestShortname) {
+		this.guestShortname = guestShortname;
 	}
 
 	public String getStadium() {

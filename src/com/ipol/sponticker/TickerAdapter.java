@@ -71,6 +71,11 @@ public class TickerAdapter extends ArrayAdapter<TickerEvent> {
 			txtDiscreption.setText("Tor: " + event.getScore() + ", "
 					+ event.getPlayer() + " (" + event.getTeam() + ")");
 			break;
+		case OWNGOAL:
+			imgIcon.setImageResource(R.drawable.timeline_ball_2x);
+			txtDiscreption.setText("Eigentor: " + event.getScore() + ", "
+					+ event.getPlayer() + " (" + event.getTeam() + ")");
+			break;
 		case YELLOW:
 			imgIcon.setImageResource(R.drawable.timeline_card_yellow_2x);
 			txtDiscreption.setText("Gelbe Karte: " + event.getPlayer() + " ("
@@ -91,8 +96,16 @@ public class TickerAdapter extends ArrayAdapter<TickerEvent> {
 			txtDiscreption.setText("Wechsel " + event.getTeam() + ": "
 					+ event.getPlayer() + " für " + event.getOtherPlayer());
 			break;
+		case PENALTY:
+			imgIcon.setVisibility(View.GONE);
+			txtDiscreption.setText("Elfmeter gepfiffen");
 		}
 
 		return view;
+	}
+
+	@Override
+	public boolean isEnabled(int position) {
+		return false;
 	}
 }

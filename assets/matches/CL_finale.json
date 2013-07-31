@@ -1,0 +1,1658 @@
+{
+   "PAARUNGEN" : {
+      "PAARUNG" : {
+         "SAISON" : "2012/13",
+         "AUFSTELLUNGHEIM" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "22930",
+                  "content" : "Weidenfeller"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "39456",
+                  "content" : "Piszczek"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "43511",
+                  "content" : "Subotic"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "40152",
+                  "content" : "Hummels"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "45016",
+                  "content" : "Schmelzer"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "39194",
+                  "content" : "S. Bender"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "48408",
+                  "content" : "Gündogan"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "37612",
+                  "content" : "Blaszczykowski"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "46429",
+                  "content" : "Reus"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "42062",
+                  "content" : "Großkreutz"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "51570",
+                  "content" : "Lewandowski"
+               }
+            ]
+         },
+         "UHRZEIT" : "20:45",
+         "STADION" : "Wembley",
+         "SPIELTAG" : "10",
+         "HEIM" : {
+            "VEREINID" : "17",
+            "TRAINER" : "Jürgen Klopp",
+            "NATION" : "DEU",
+            "content" : "Borussia Dortmund",
+            "TRAINERID" : "2641"
+         },
+         "SPIELEREIGNISSE" : {
+            "EREIGNIS" : [
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:23:50",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Das von vielen Fußballfans heiß ersehnte Champions-League-Finale zwischen Borussia Dortmund und Bayern München steht kurz vor dem Anpfiff. Knapp zwei Stunden noch, ehe es im Londoner Wembley-Stadion ernst wird. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:25:27",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Für Statistik-Fans noch ein paar interessante Infos: Borussia Dortmund hat in seiner 60-jährigen  Europapokal-Geschichte noch kein Spiel gegen eine deutsche  Mannschaft verloren und bisher auch noch kein Gegentor kassiert. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:27:37",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Im Viertelfinale der Champions League 1997/98 spielte der BVB gegen Bayern München 0:0 und 1:0 n.V., 1989/90 im Pokalsieger-Wettbewerb siegten die Borussen jeweils mit 2:0 gegen den Chemnitzer FC. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:28:05",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "In 42 von 57 Endspielen der Champions League bzw. dem früheren  Europapokal der Landesmeister hat die \"Heimmannschaft\" gewonnen. Heute genießen die Dortmunder Heimrecht, was übrigens ausgelost wurde. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:33:17",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Der BVB hatte bei seinem Triumph 1997 (3:1 gegen Juventus Turin) ebenso  Heimrecht wie beim 5:2 im Endspiel um den DFB-Pokal im vergangenen  Jahr gegen Bayern München. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:34:00",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "In den vergangenen fünf Jahren gab es nur zwei \"Gastgeber\", die den den Henkelpott nicht gewannen - beide Male war das der FC Bayern München (2010 und 2012)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:38:54",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Wembley ist zum bereits siebten Mal Ausrichter eines Endspiels der Königsklasse. In den bisherigen sechs Endspielen hat bisher übrigens immer die \"Heimmannschaft\" gewonnen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:40:29",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Es gibt noch andere Punkte, die für einen BVB-Sieg sprechen: 1997, als Dortmund die Champions League gewann, stieg Hertha BSC in die Bundesliga auf, während Fortuna Düsseldorf ins Unterhaus musste - so wie in diesem Jahr."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:42:23",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Ferner wurde der FC Bayern Meister klar Meister und der VfB Stuttgart stand im DFB-Pokal-Finale - so wie dieses Jahr. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:43:09",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Doch es gibt auch Fakten, die für die Bayern sprechen. In den vergangenen sechs Jahren setzte sich entweder der FC Barcelona durch oder die Mannschaft, die die Katalanen zuvor bezwungen hatte. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:44:34",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "2009 und 2011 gewann Barca die Königsklasse, 2008, 2010 und 2012 waren es Manchester United, Inter Mailand und Chelsea - alle drei hatten zuvor im Halbfinale die Katalanen ausgeschaltet. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:45:42",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "In diesem Jahr waren es die Bayern, die im Semifinale das Dreamteam um Lionel Messi & Co. aus dem Weg räumten.  "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:46:54",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Es passiert nicht zum ersten Mal, dass zwei Klubs während einer Saison fünfmal aufeinandertreffen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:48:10",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Einzigartig ist jedoch, dass sich Dortmund und der FCB fünfmal in vier verschiedenen Wettbewerben gegenüberstehen. (Bundesliga, Supercup, DFB-Pokal und Champions League). "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:48:53",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "2013 steht also das erste deutsche Finale an. Alle großen Fußball-Nationen hatten aber in der Champions League schon ihr nationales Finale: "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:51:09",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Spanien im Jahr 2000 (Real Madrid gegen FC Valencia), Italien 2003 (AC Mailand gegen Juventus Turin) und England 2008 (Manchester United gegen Chelsea)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:56:38",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Der FC Bayern verfügt über mehr Erfahrung in der Königsklasse als der BVB. Die Münchner haben seit 1992 mit 174  Spielen (90 Siege/43 Unentschieden/41 Niederlagen) mehr als doppelt  so viele bestritten wie Dortmund (71 - 34/18/19)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 18:57:18",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Bayern liegen mit 313 Punkten auf Platz vier der \"ewigen Tabelle\" der Champions League. Nur Manchester United (190 Spiele, 355 Punkte), der FC Barcelona (183/354) und Real Madrid (187/353) sind besser. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:00:24",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Jupp Heynckes könnte der dritte Trainer werden, der mit zwei unterschiedlichen Vereinen die Champions League gewinnt - 1998 gewann er die Königsklasse mit Real Madrid im Finale gegen Juventus Turin (1:0)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:02:17",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Zuvor ist dieses Kunststück Ottmar Hitzfeld (Dortmund/1997 und Bayern/2001) und José Mourinho (FC Porto/2004 und Inter/2010) gelungen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:03:12",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Ernst Happel holte den Europapokal der Landesmeister mit Feyenoord Rotterdam (1970) und dem Hamburger SV (1983)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:03:50",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "14 der 20 Endspiele seit Einführung der Champions League 1992 wurden in 90 Minuten entschieden, sechs Mal musste der Sieger im Elfmeterschießen ermittelt werden.  "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:04:02",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "2001 setzten sich die Bayern so gegen den FC Valencia durch, 2012 zogen sie gegen den FC Chelsea den Kürzeren. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:04:25",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "In den Finals seit 1992 fielen bisher 51 Tore, häufigste Ergebnisse sind 2:1 und 1:1 (jeweils vier Mal), drei Mal endete das Finale 1:0. Höchster Endspiel-Sieg war das 4:0 des AC Mailand gegen Barcelona im Jahr 1994. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:05:13",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Das torreichste Finale gab es 2005 zwischen Milan und Liverpool: 3:3 stand es nach 90 Minuten, die Entscheidung fiel im Elfmeterschießen, das die Reds mit 3:2 gewannen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:07:15",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Fünf Spielern gelang im Finale ein Doppelpack: Daniele Massaro 1994, Hernán Crespo 2005 und Filippo Inzaghi 2007 (alle AC Milan). Das schafften auch noch Karl-Heinz Riedle 1997 (Dortmund) und Diego Milito 2010 (Inter Mailand)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:09:38",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Tore in zwei verschiedenen Finals erzielten Raúl für Real Madrid (2000/2002), Samuel Eto'o 2006 und 2009 sowie Lionel Messi 2009 und 2011 - beide für den FC Barcelona. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:11:34",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Thomas Müller, der im Vorjahr gegen Chelsea getroffen hat, kann in diesen Kreis aufsteigen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:12:27",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Rote Karten im Champions-League-Finale sind selten. Das gab's erst zweimal: Jens Lehmann, damals beim FC Arsenal, flog 2006 vom Platz, Didier Drogba (FC Chelsea) erwischte es im Jahr 2008. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:15:24",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Schweinsteiger hat in seiner Karriere bisher viel erlebt, in Wembley hat er aber noch nicht gespielt. \"Ich habe noch nie in Wembley gespielt, deshalb freue ich mich auf die Atmosphäre\", so Schweinsteiger, der sich betont gelassen gab. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:17:17",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "\"Wenn es nicht klappt, werde ich auch nicht kürzer leben\", sagte er mit Blick auf eine mögliche dritte Final-Niederlage. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:18:31",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Beim Außenseiter Dortmund beschor man die Geister der Vergangenheit: \"Wie für die Elf von 1997 gilt für uns, dass in einem Spiel alles möglich ist\", sagte Weidenfeller."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:21:36",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Heynckes erwartet jedenfalls ein \"intensives Spiel, mit hohem Tempo und intensiven Zweikämpfen\". \"Ich denke, das Spiel wird so ablaufen, wie es sich für ein Champions-League-Endspiel gehört\", so der Meistertrainer. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:23:15",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Der 68-jährige Heynckes war allerdings auch stark darum bemüht, die Bedeutung der Partie abzuschwächen:  \"Es ist ein Fußballspiel, wo elf gegen elf spielen.\" "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:24:32",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "BVB-Coach Jürgen Klopp sieht sein Team nicht unter Druck:\" Wenn man als Außenseiter den gleichen Druck wie der Favorit verspüren würde, wie doof wäre das denn?\", fragte der Erfolgstrainer. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:25:35",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Gewinnen will Klopp dann aber doch: \"Wir versuchen, den Henkelpott zu holen, egal, was der Gegner verlieren kann\"."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:36:13",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Bei den Aufstellungen gibt es auf beiden Seiten keine Überraschungen: Dortmund läuft mit derselben Elf auf wie beim 1:2 gegen Hoffenheim. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:38:26",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Weidenfeller - Piszczek, Subotic, Hummels, Schmelzer - Bender, Gündogan - Kuba, Reus, Großkreutz - Lewandowski. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:38:45",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Bayern spielen ebenfalls im 4-2-3-1-System: Neuer - Lahm, Boateng, Dante, Alaba - Javi Martinez, Schweinsteiger - Robben, Müller, Ribery und Mandzukic. Es ist dieselbe Elf wie beim 4:3 in Gladbach. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:41:26",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "In der Bundesliga haben die Bayern im direkten Vergleich die Nase vorn: 88 Spiele gab's bisher zwischen den beiden Klubs - 38 Siege feierte der FCB, 22 der BVB, während es 28-mal ein Remis gab. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:42:55",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Der letzte Liga-Sieg der Bayern ist aber schon eine Weile her: Am 13. Februar 2010 siegten die Münchner mit 3:1, danach folgten vier Siege der Westfalen und zwei Unentschieden - diese gab's in der abgelaufenen Saison. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:52:32",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Zum Ende der Bundesliga-Saison schwächelten die Dortmunder ein wenig. Zwei Niederlagen und zwei Remis waren die Bilanz. Allerdings ging's für den BVB da um Nichts mehr! Sammer geht davon aus, dass der BVB \"heute anders auftreten wird\"."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:54:41",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Bayern sind indes seit 14 Pflichtspielen ungeschlagen. An sich kassierten sie in der abgelaufenen Spielzeit nur drei Pleiten - zwei in der Champions League (BATE Baryssau und Arsenal) und eine in der Bundesliga (Leverkusen)."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 19:56:45",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Der FCB spielte in der Bundesliga eine unglaubliche Saison. Das belegen die Zahlen: 29 Siege, vier Remis, eine Niederlage, 91 Punkte, 98:18 Tore - das kann sich sehen lassen!"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:10:22",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Jürgen Klopp gibt sich auch vor Spielbeginn gelassen, wenngleich er zugibt, dass er \"angespannt\" sei - das ist er \"aber bei jedem Spiel\". "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:11:03",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "\"Meine Arbeit ist getan, jetzt liegt es bei den Spielern auf dem Platz\", so Klopp, der klar stellt, dass sein Team \"gegen diese Supermannschaft befreit aufspielen kann\". "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:12:04",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Mit Blick auf die Startelf erklärte Klopp, dass es eine \"Bauchentscheidung\" war, betonte aber zugleich, dass \"es ohnehin nicht viele Möglichkeiten gegeben hat\". "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:17:41",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Heynckes sieht den psychologischen Vorteil bei seinem Team: \"In diesem Jahr haben wir zweimal gegen Dortmund gewonnen (Pokal und Supercup) und spielten zweimal Remis (Bundesliga), das steckt in den Köpfen der Dortmunder drin\". "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:24:57",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Schweinsteiger hat sich beim Aufwärmen am Knöchel weh getan, kühlt mit Eis und setzt nun seine Vorbereitungen fort."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:39:03",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Zunächst gibt es eine kleine Eröffnungsshow. Bei dieser treten Ritter in BVB- und FCB-Look auf und liefern sich einen Show-Kampf. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:40:25",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Choreographie geht weiter, währenddessen warten die Spieler beider Mannschaften im Kabinengang - große Wimpel mit den Logos beider Finalisten werden auf dem Rasen ausgerollt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:41:32",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Paul Breitner und Lars Ricken - ebenfalls in Ritterrüstung - tragen den Pokal jetzt auf den Rasen. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:42:06",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Die Spieler betreten den \"heiligen Rasen\" von Wembley. Die Spannung steigt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:43:40",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Einmalige Kulisse in Wembley während der Champions-League-Hymne. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:44:58",
+                  "MINUTE" : "0",
+                  "KOMMENTAR" : "Weidenfeller gewinnt die Platzwahl. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:46:24",
+                  "MINUTE" : "1",
+                  "KOMMENTAR" : "Schiedsrichter Nicola Rizzoli aus Italien gibt den Ball frei."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:46:45",
+                  "MINUTE" : "1",
+                  "KOMMENTAR" : "Dante und Neuer spielen sich zunächst den Ball hin und her. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:47:49",
+                  "MINUTE" : "2",
+                  "KOMMENTAR" : "Bender stört Martinez robust, erstes Foul für die Bayern. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:48:56",
+                  "MINUTE" : "3",
+                  "KOMMENTAR" : "Dortmund agil: Reus bringt den Ball von rechts nach innen zu Lewandowski, der unter Bedrängnis den direkten Abschluss sucht. Der Ball prallt von Dante ab und segelt ins Toraus. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:49:42",
+                  "MINUTE" : "4",
+                  "KOMMENTAR" : "Die folgende Ecke von rechts bringt nichts ein. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:50:06",
+                  "MINUTE" : "5",
+                  "KOMMENTAR" : "In den ersten Minuten macht Dortmund mehr, spielt mutiger und investiert mehr ins Spiel. Die Bayern beginnen eher verhalten. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:52:31",
+                  "MINUTE" : "7",
+                  "KOMMENTAR" : "Gündogan flankt aus dem rechten Halbfeld, Boateng klärt per köpft zur Ecke. Schmelzer schlägt das Leder von links rein, doch Neuer pflückt die Kugel aus der Luft. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:53:56",
+                  "MINUTE" : "8",
+                  "KOMMENTAR" : "Mal ein Angriff der Münchner: Müller schlägt den Ball rein, Schmelzer entschärft die Flanke, am Ende greift Weidenfeller zu. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:56:17",
+                  "MINUTE" : "10",
+                  "KOMMENTAR" : "Kuba kommt über rechts und will flach in die Füße von Lewandowski passen. Martinez grätscht das Zuspiel ab, der Ball landet wieder bei Kube, der nun aus 15 Metern rechter Position abzieht - drüber. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:59:07",
+                  "MINUTE" : "13",
+                  "KOMMENTAR" : "Lewandowski dreht sich geschickt um Boateng und hat dann freie Bahn. Der Pole findet im Sechzehner aber keinen Mitspieler, der Ball rollt ins Toraus."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 20:59:57",
+                  "MINUTE" : "14",
+                  "KOMMENTAR" : "Wieder Lewandowski, der diesmal aus etwa 22 Metern ein echtes Pfund loslässt. Neuer lenkt das Leder mit den Fingerspitzen noch über die Latte. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:00:50",
+                  "MINUTE" : "15",
+                  "KOMMENTAR" : "Und gleich der nächste Hochkaräter: Reus bringt den Ball von rechts flach ins Zentrum. Dort taucht Kuba auf, scheitertet anschließend aber aus acht Metern an Neuer, der die Bayern bisher alleine im Spiel hält. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:02:11",
+                  "MINUTE" : "16",
+                  "KOMMENTAR" : "Konter der Münchner: Müller spritzt auf rechts davon und nimmt Martinez mit. Dessen flache Hereingabe von der rechten Grundlinie landet in den Armen von Weidenfeller. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:04:20",
+                  "MINUTE" : "18",
+                  "KOMMENTAR" : "Piszczek will den Befreiungsschlag spielen, trifft dabei aber unghlücklich den einen halben Meter entfernt stehenden Ribery in der Magengegend. Ribery muss durchpusten, kann aber weitermachen."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:05:21",
+                  "MINUTE" : "19",
+                  "KOMMENTAR" : "Großkreutz schickt Reus auf die Reise, der losspurtet und dann aus 15 Metern mit einem zu zentralen Schuss in Neuer seinen Meister findet. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:07:49",
+                  "MINUTE" : "22",
+                  "KOMMENTAR" : "Aus einem flapsigen Pass von Dante resultiert die nächste Chance der Dortmunder: Großkreutz rennt dem Ball hinterher und hat das Auge für Bender, der im Sechzehner abzieht. Neuer fängt den verdeckten 15-Meter-Schuss."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:11:53",
+                  "MINUTE" : "26",
+                  "KOMMENTAR" : "Lewandowski setzt Ribery unter Druck, schiebt und drückt: Der Franzose schlägt aus und trifft den Polen. Rizzoli belässt es bei einer Ermahnung für beide."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:13:12",
+                  "MINUTE" : "27",
+                  "KOMMENTAR" : "Jetzt die erste gute Chance für die Bayern: Bei einer Flanke von links schraubt sich Mandzukic hoch und köpft aufs Tor. Weidenfeller lenkt den Ball mit den Fingerspitzen noch an die Latte. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:13:59",
+                  "MINUTE" : "27",
+                  "KOMMENTAR" : "Aus der Ecke springt die nächste Möglichkeit heraus: Martinez steigt im Zentrum hoch, köpft anschließen allerdings knapp über den Kasten. "
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Dante lässt Reus auflaufen und sieht dafür die erste Gelbe der Partie. ",
+                  "VEREINID" : "14",
+                  "MINUTE" : "29",
+                  "TICKERZEIT" : "25.05.2013 21:14:48",
+                  "SPIELER" : {
+                     "SPIELERID" : "33694",
+                     "content" : "Dante"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:16:11",
+                  "MINUTE" : "30",
+                  "KOMMENTAR" : "Auf einmal das Riesenloch in der BVB-Abwehr - und Robben ist frei durch. Im Eins-gegen-Eins bleibt Weidenfeller lange stehen, verunsichert den Niederländer und pariert zur Ecke. Diese bringt dann nichts ein. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:19:23",
+                  "MINUTE" : "33",
+                  "KOMMENTAR" : "Die Münchner haben sich gesteigert und gestalten die Begegnung nun offener. Das liegt aber auch daran, dass die Dortmunder das immense Laufspiel aus der Anfangsphase nicht über die gesamte Spielzeit halten können. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:21:12",
+                  "MINUTE" : "35",
+                  "KOMMENTAR" : "Alaba verliert den Ball im Aufbau, direkt folgt der Steilpass auf Lewandowski, der Boateng stehen lässt, im Strafraum aus spitzem Winkel an Neuer aber nicht vorbei kommt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:22:28",
+                  "MINUTE" : "37",
+                  "KOMMENTAR" : "Müller wuselt sich am gegnerischen Sechzehner durch und spielt den klugen Pass in die Gasse zum startenden Robben. Dieser wird im Sechzehner von Subotic entscheidend irritiert - es folgt Ecke. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:23:31",
+                  "MINUTE" : "37",
+                  "KOMMENTAR" : "Bei der folgenden Ecke verlängert Müller per Kopf an den zweiten Pfosten, wo Mandzukic einen Schritt zu spät kommt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:25:22",
+                  "MINUTE" : "39",
+                  "KOMMENTAR" : "Öffnender Pass von Lahm auf Robben, der Müller mitnimmt. Dieser läuft nach vorne und passt flach und scharf in die Mitte. Dort wartet Ribery nicht lange, wird von Bender aber noch gestört - Weidenfaller hat den Ball am Ende. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:28:38",
+                  "MINUTE" : "42",
+                  "KOMMENTAR" : "Die Partie bleibt spannend, auch wenn das ganz große Tempo derzeit nicht geboten wird. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:28:40",
+                  "MINUTE" : "43",
+                  "KOMMENTAR" : "Hummels verschätzt sich bei einem hohen Ball und eröffnet damit Robben die Riesenchance. Der Niederländer zieht aus zwölf Metern sofort ab, schießt aber nur den vor ihm stehenden Weidenfeller an. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:30:23",
+                  "MINUTE" : "44",
+                  "KOMMENTAR" : "Mandzukic leitet weiter auf Müller, dessen anschließender Pass in den Sechzehner misslingt aber vollkommen - Abstoß. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:31:28",
+                  "MINUTE" : "45",
+                  "KOMMENTAR" : "Die Bayern waren in den ersten 20 Minuten sichtlich nervös und hatten große Probleme mit frechen und extrem lauffreudigen Dortmundern, die aber ihre Chancen nicht nutzten. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:31:38",
+                  "MINUTE" : "45",
+                  "KOMMENTAR" : "Im weiteren Spielverlauf wachte der FCB auf, gestaltete die Partie offener und setzte eigene Akzente. Erste Chancen des Favoriten folgten, doch auch den Münchnern fehlte es an Effizienz. Es ist ein 0:0 der besseren Art. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:46:55",
+                  "MINUTE" : "46",
+                  "KOMMENTAR" : "Keine Wechsel zur Pause."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:48:54",
+                  "MINUTE" : "47",
+                  "KOMMENTAR" : "Wieder erwischt Dortmund den besseren Start. Ribery läuft Reus in die Hacken und verursacht einen Freistoß in 35 Metern Torentfernung. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:49:44",
+                  "MINUTE" : "48",
+                  "KOMMENTAR" : "Reus zirkelt die Kugel in die Gefahrenzone, findet dort jedoch nur Neuer. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:51:37",
+                  "MINUTE" : "50",
+                  "KOMMENTAR" : "Kuba will den Ball an Alaba vorbeilegen, der Österreicher kommt aber gerade noch mit dem Fuß dran. Im Gegenzug der lange Ball auf Mandzukic, der wiederum im Abseits steht. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:53:36",
+                  "MINUTE" : "52",
+                  "KOMMENTAR" : "Immer wieder stellen die Westfalen die Räume exzellent zu und zwingen die Bayern dadurch zu langen Bällen. Das ist nicht das Spiel des Meisters. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:54:40",
+                  "MINUTE" : "53",
+                  "KOMMENTAR" : "Im Strafraum landet der Ball bei Müller, dem Hummels aber die Tür vor der Nase zuschlägt - Abstoß. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:56:41",
+                  "MINUTE" : "55",
+                  "KOMMENTAR" : "Lewandowski nimmt Reus mit, der geschickt im Mittelfeld gegen Martinez ein Foul herausholt - mehr auch nicht. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 21:57:54",
+                  "MINUTE" : "56",
+                  "KOMMENTAR" : "Im Sechzehner kocht Hummels Ribery eiskalt ab und spielt den Ball anschließend ins Seitenaus, weil Mandzukic verletzt am Boden liegt. Nach kurzer Unterbrechung geht es für den Kroaten weiter. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:00:06",
+                  "MINUTE" : "59",
+                  "KOMMENTAR" : "Ecke für die Bayern: Martinez verlängert ungewollt in den Fünfer zu Mandzukic, der schlecht steht, den Ball dann aber doch noch aufs Tor bringt - Weidenfeller greift zu."
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "KOMMENTAR" : "Ribery zieht drei Mann auf sich und steckt prima zu Robben durch. Dieser hat freie Bahn, lässt sich von Weidenfeller zu weit rausdrängen, passt dann aber doch quer in die Mitte. Schmelzer kann nicht klären, Mandzukic staubt ab. ",
+                  "SPIELSTAND" : "0:1",
+                  "VEREINID" : "14",
+                  "MINUTE" : "60",
+                  "TICKERZEIT" : "25.05.2013 22:01:51",
+                  "SPIELER" : {
+                     "SPIELERID" : "46110",
+                     "content" : "Mandzukic"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:03:32",
+                  "MINUTE" : "62",
+                  "KOMMENTAR" : "Jetzt können die Bayern kontern! Alaba mit dem weiten Ball auf Mandzukic, der von Hummels bedrängt aus spitzem Winkel von rechts Weidenfeller nicht bezwingen kann. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:05:52",
+                  "MINUTE" : "64",
+                  "KOMMENTAR" : "Zusammenprall von Subotic und Ribery, der theatralisch zu Boden geht und sich wild herumwälzt. Rizzoli hatte gute Sicht und winkt zu Recht durch. "
+               },
+               {
+                  "VEREIN" : "Borussia Dortmund",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Übermotiviert will Dante gegen Reus klären und foult diesen unbeholfen im eigenen Sechzehner. Klarer Strafstoß. ",
+                  "VEREINID" : "17",
+                  "MINUTE" : "67",
+                  "TICKERZEIT" : "25.05.2013 22:08:43",
+                  "SPIELER" : {
+                     "SPIELERID" : "33694",
+                     "content" : "Dante"
+                  },
+                  "TYP" : "ELFMETERGEPFIFFEN"
+               },
+               {
+                  "VEREIN" : "Borussia Dortmund",
+                  "SPEZIFISCH" : "Elfmeter",
+                  "KOMMENTAR" : "Gündogan übernimmt die Verantwortung, verlädt Neuer und jagt das Leder mit einem strammen Rechtsschuss ins rechte Eck. ",
+                  "SPIELSTAND" : "1:1",
+                  "VEREINID" : "17",
+                  "SPIELER" : {
+                     "SPIELERID" : "48408",
+                     "content" : "Gündogan"
+                  },
+                  "MINUTE" : "68",
+                  "TICKERZEIT" : "25.05.2013 22:09:46",
+                  "TYP" : "TOR"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:11:13",
+                  "MINUTE" : "70",
+                  "KOMMENTAR" : "Nach einer Ecke der Bayern läuft der Konter des BVB: Reus schickt Kuba noch bevor er am Ball ist und passt dann steil in den Lauf des Polen. Dieser wird im Sechzehner von Alaba noch gestellt, spielt dann quer auf Hummels, ..."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:12:14",
+                  "MINUTE" : "70",
+                  "KOMMENTAR" : "... der aus der zweiten Reihe verzieht und ein gutes Stück drüber schießt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:13:26",
+                  "MINUTE" : "72",
+                  "KOMMENTAR" : "Riesentat von Subotic! Bei einem Konter läuft Müller davon, umkurvt Weidenfeller und passt quer in die Mitte. Robben steht am zweiten Pfosten, zieht aber nicht durch. Anders Subotic, der riskant auf der Linie klärt."
+               },
+               {
+                  "VEREIN" : "Borussia Dortmund",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Großkreutz zieht an Ribery, der zu Boden geht und wild gestikuliert. Großkreutz geht direkt zum Franzosen und erzählt ihm ein paar Takte. ",
+                  "VEREINID" : "17",
+                  "MINUTE" : "73",
+                  "TICKERZEIT" : "25.05.2013 22:15:16",
+                  "SPIELER" : {
+                     "SPIELERID" : "42062",
+                     "content" : "Großkreutz"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "SPEZIFISCH" : "",
+                  "KOMMENTAR" : "Rizzoli beruhigt die Streithähne und zückt zweimal Gelb. ",
+                  "VEREINID" : "14",
+                  "MINUTE" : "73",
+                  "TICKERZEIT" : "25.05.2013 22:15:26",
+                  "SPIELER" : {
+                     "SPIELERID" : "39686",
+                     "content" : "Ribery"
+                  },
+                  "TYP" : "GELB"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:17:18",
+                  "MINUTE" : "76",
+                  "KOMMENTAR" : "Nachdem Hummels den Ball im Sechzehner nicht entscheidend geklärt hat, landet die Kugel bei Alaba, der aus 20 Metern genau Maß nimmt. Weidenfeller ist da und pariert stark zur Ecke, die dann nichts einbringt."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:18:49",
+                  "MINUTE" : "77",
+                  "KOMMENTAR" : "Steilpass auf Müller, der das Laufduell mit Haken und Ösen mit Subotic führt. Müller passt dann zu ungenau nach rechts zu Mandzukic, der aus spitzem Winkel nur das rechte Außennetz trifft. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:19:54",
+                  "MINUTE" : "78",
+                  "KOMMENTAR" : "Müller regt sich fürchterlich auf, will ein Foul gegen Subotic an ihm gepfiffen bekommen. Rizzoli sah in der Aktion kein Foul. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:21:05",
+                  "MINUTE" : "80",
+                  "KOMMENTAR" : "Es wird hektischer und auch ruppiger! Nach einem Zweikampf mit Boateng tritt Lewandowski seinem Gegenspieler wohl unabsichtlich auf den Knöchel. Der Münchner muss behandelt werden."
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:22:57",
+                  "MINUTE" : "81",
+                  "KOMMENTAR" : "Boateng beißt auf die Zähne und macht weiter: Robben rennt sich bei Bender fest, doch Ribery übernimmt, kommt aber auch nicht durch die gegnerische Deckung durch. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:23:57",
+                  "MINUTE" : "82",
+                  "KOMMENTAR" : "Lahm flankt von rechts an den zweiten Pfosten. Dort klärt Piszczek auf Kosten einer Ecke vor dem lauernden Mandzukic. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:24:35",
+                  "MINUTE" : "83",
+                  "KOMMENTAR" : "Bei dieser landet der Ball vor den Füßen von Schweinsteiger, der in Rücklage aus 20 Metern verzieht und das Leder drüber jagt. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:25:58",
+                  "MINUTE" : "84",
+                  "KOMMENTAR" : "Ein Schmelzer-Freistoß wird abgefangen. Müller schickt Robben steil, dem sich Gündogan aber geschickt in den Weg stellt und dann sogar noch ein Foul provoziert. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:28:35",
+                  "MINUTE" : "86",
+                  "KOMMENTAR" : "Die Bayern machen jetzt den frischeren Eindruck. Dortmund fast nur noch in der Defensive gebunden. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:29:06",
+                  "MINUTE" : "87",
+                  "KOMMENTAR" : "Weidenfeller brilliert! Müller lässt eine flache Hereingabe von rechts für Schweinsteiger durch. Dieser zimmert aus 16 Metern voll drauf, doch Weidenfeller lenkt den Ball reflexartig noch zur Seite weg. "
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "KOMMENTAR" : "Da ist es passiert! Ribery setzt sich gegen Piszczek durch und leitet weiter auf Robben, der durch die Mitte in den Strafraum eindringt - Hummels und Subotic grätschen vorbei - und Robben schiebt den Ball in die Maschen. ",
+                  "SPIELSTAND" : "1:2",
+                  "VEREINID" : "14",
+                  "MINUTE" : "89",
+                  "TICKERZEIT" : "25.05.2013 22:31:12",
+                  "SPIELER" : {
+                     "SPIELERID" : "28673",
+                     "content" : "Robben"
+                  },
+                  "TYP" : "TOR"
+               },
+               {
+                  "VEREIN" : "Borussia Dortmund",
+                  "SPEZIFISCH" : "S. Bender",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "17",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "36929",
+                     "content" : "Sahin"
+                  },
+                  "MINUTE" : "90",
+                  "TICKERZEIT" : "25.05.2013 22:32:54",
+                  "SPEZIFISCHID" : "39194",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Borussia Dortmund",
+                  "SPEZIFISCH" : "Blaszczykowski",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "17",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "49571",
+                     "content" : "Schieber"
+                  },
+                  "MINUTE" : "90",
+                  "TICKERZEIT" : "25.05.2013 22:33:06",
+                  "SPEZIFISCHID" : "37612",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "SPEZIFISCH" : "Ribery",
+                  "KOMMENTAR" : {},
+                  "VEREINID" : "14",
+                  "POSITION" : "MITTELFELD",
+                  "SPIELER" : {
+                     "SPIELERID" : "46533",
+                     "content" : "Luiz Gustavo"
+                  },
+                  "MINUTE" : "90+1",
+                  "TICKERZEIT" : "25.05.2013 22:33:21",
+                  "SPEZIFISCHID" : "39686",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:33:24",
+                  "MINUTE" : "90+1",
+                  "KOMMENTAR" : "Und Schieber hat gleich ansatzweise eine erste Möglichkeit. Sein Drehschuss aus 15 Metern landet in den Armen von Neuer. "
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:34:01",
+                  "MINUTE" : "90+3",
+                  "KOMMENTAR" : "Dortmund hat nichts mehr zu verlieren, wirft nun alles nach vorne, beißt sich aber die Zähne an der Bayern-Abwehr aus. "
+               },
+               {
+                  "VEREIN" : "Bayern München",
+                  "SPEZIFISCH" : "Mandzukic",
+                  "KOMMENTAR" : "Heynckes nimmt noch etwas Zeit von der Uhr. Gomez darf ein paar Sekunden Finalluft schnuppern. ",
+                  "VEREINID" : "14",
+                  "POSITION" : "STURM",
+                  "SPIELER" : {
+                     "SPIELERID" : "29909",
+                     "content" : "Gomez"
+                  },
+                  "MINUTE" : "90+4",
+                  "TICKERZEIT" : "25.05.2013 22:35:05",
+                  "SPEZIFISCHID" : "46110",
+                  "TYP" : "EINWECHSLUNG"
+               },
+               {
+                  "SPIELER" : {},
+                  "TICKERZEIT" : "25.05.2013 22:43:59",
+                  "MINUTE" : "90",
+                  "KOMMENTAR" : "Die Bayern sind Champions-League-Sieger 2013. Weitere Informationen rund um die Pokalvergabe können Sie in unserem Final-Splitter mitverfolgen. "
+               }
+            ]
+         },
+         "ZUSCHAUER" : {
+            "content" : "86298",
+            "AUSVERKAUFT" : "JA"
+         },
+         "STADIONID" : "510",
+         "KICKERID" : "1886185",
+         "SCHIEDSRICHTER" : {
+            "SCHIEDSRICHTERID" : "946",
+            "content" : "Rizzoli (Italien)"
+         },
+         "turboticker" : {
+            "SPIELEREIGNISSE" : {
+               "EREIGNIS" : [
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Hallo und guten Abend! Seit Wochen wird drüber geredet, seit Tagen scheint es fast kein anderes Thema mehr zu geben - heute ist es endlich so weit. Das große Finale in Wembley um die Krone im europäischen Vereinsfußball zwischen Borussia Dortmund und dem FC Bayern München steigt. Mein Name ist Peter Ahrens, und ich begleite das Live-Spiel von London durch den Abend. Der hoffentlich die Erwartungen erfüllt. Denn sie sind hoch. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Alles, so hat man das Gefühl, ist gesagt. Jedes Tierorakel ist befragt, jeder Hardcore-Fan, jeder Promi. Dieses Spiel hat alle in Deutschland beschäftigt wie noch nie ein Champions-League-Spiel, und dabei ist es noch gar nicht angepfiffen. Aber das dauert jetzt nicht mehr lange. Langsam kann man sich anschnallen, die Türen schließen und die Sitze hochklappen. Wembley ist bereit. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Wer ist der Favorit? Eigentlich ist es klar. Bei dieser Saison, bei dieser Souveränität, bei dieser Siegesgewissheit kann der Gewinner am Ende eigentlich nur FC Bayern heißen. Eigentlich - das Wort ist in diesem Zusammenhang nicht ganz unwichtig. Der BVB hat zwar im DFB-Pokal gegen die Bayern in München 1:0 verloren. In der Liga haben die Bayern dagegen seit drei Jahren nicht mehr gegen Schwarz-Gelb gewinnen können. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Bei Dortmund wiegt der Ausfall von Mario Götze schwer. Im Vorjahr spielte der BVB zwar im Pokalendspiel bei der 5:2-Gala gegen die Bayern auch ohne den Jungstar. Aber das waren auch noch andere Bayern. Die Münchner wirkten zuletzt so cool - und Personalsorgen kennen sie auch nicht. Felix Bavaria.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die größte Überraschung gibt es jetzt schon: Es regnet in London NICHT. Dafür ist die Fanmeile in Berlin, zu der 250.000 Menschen erwartet wurden, komplett verregnet. Das Showprogramm mit Jürgen Drews auf der Bühne dürfte darüber hinaus das Seinige dazugetan haben, dass sich nur ein paar hundert Unentwegte bisher vors Brandenburger Tor getraut haben. Die wahren Fans sind ohnehin gesammelt in London.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die Bayern sind da und schreiten den heiligen Rasen ab. Die Journalisten versuchen in solchen Momenten gerne, an den Mienen der Spieler etwas darüber abzulesen, unter welchem Druck sie stehen. Weil die Spieler das wissen, geben sie sich gerne entspannt. Jeder weiß, was es für die Bayern bedeuten würde, das dritte Finale in vier Jahren zu verlieren. Dazu braucht man keine Lippenleser.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die Aufstellungen sind da: Die Bayern wie erwartet mit Neuer, Lahm, Boateng, Dante, Alaba - Martinez, Schweinsteiger - Robben, Müller, Ribéry - Mandzukic. Und der BVB ersetzt Götze durch Kevin Großkreutz: auch keine große Überraschung.  ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Beim BVB laufen demnach auf: Weidenfeller - Schmelzer, Hummels, Subotic, Piszczek - Bender, Gündogan - Kuba, Reus, Großkreutz - Lewandowski. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Eine Stunde bis zum Anpfiff. Sebastian Vettel tippt auf Dortmund, Nico Rosberg auf die Bayern. Damit wäre das auch geklärt.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Keine Handtuchwitze mehr, keine Steuerhinterziehungs-Scherze mehr. Und selbst keine Häme mehr über die Strickjacken von Bayern-Sportvorstand Matthias Sammer. In Wembley geht es jetzt nur noch um den Sport. Es knistert. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Sammer kennt das Gefühl gut, den Henkelpott in die Höhe zu stemmen. Er hatte ihn 1997 selbst in der Hand: als Spieler des heutigen Gegners Borussia Dortmund. Dass Sammer seine größten Erfolge als Spieler und Trainer in Dortmund feierte - das hatte man in den vergangenen Wochen fast vergessen. Er selbst offenbar auch. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Mario Götze ist übrigens auch im Stadion. Bei der Platzbegehung der BVB-Profis war er mit dabei. Einige BVB-Fans im Stadion haben daraufhin eine grimmige Miene aufgesetzt. Sein verletzungsbedingter Ausfall ist schließlich ein klassischer Fall für die Fußball-Verschwörungstheoretiker. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "50 Minuten noch. Der Countdown wird heruntergezählt. Matthias Sammer und Hans-Joachim Watzke haben im ZDF noch schnell ihre flockigen Interviews gegeben. Nach dem Motto: Wer ist der Relaxtere von uns beiden? Antwort: Weder noch.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Wembley könnte man in der Mitte durchschneiden. Auf der einen Seite ist alles gelb, auf der anderen rot.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die Fernsehkameras halten natürlich gnadenlos drauf, als Götze einen Plausch mit dem ebenfalls verletzten künftigen Teamkollegen Toni Kroos hält. Aber noch ist er Dortmunder, der 37-Millionen-Mann. Und er wird ansonsten wohl auch jeden Eindruck vermeiden, dass es anders sei.  ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Dieses Spiel ist auch ein Duell der Trainer. <b>Jupp Heynckes</b> in seinem wahrscheinlich vorletzten Pflichtspiel als Coach gegen <b>Jürgen Klopp</b>. Altersmilde gegen  Motivationsmeisterschaft. In jedem Fall zwei der unterschiedlichsten und interessantesten Trainerpersönlichkeiten, und das gilt nicht nur für Deutschland.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Alle schauen auf die BVB-Aufstellung. Aber auch bei den Bayern hat Jupp Heynckes etwas gewagt, was fast untergeht. Jerome Boateng in der zentralen Verteidiger-Position anstelle von Daniel van Buyten ist \"nicht ganz unrisikovoll\", wie Karl-Heinz Rummenigge sagen würde. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Jetzt sind es nur noch 30 Minuten. Alle Spieler sind zum Warm-up auf dem Platz. Und es gilt die oberste Maxime: jetzt nur nicht noch ein Muskelfaserriss. Ist ohnehin das Unwort dieser Woche.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Welche Rolle spielt der Schiedsrichter? Am besten gar keine. Nicola Rizzoli aus Italien ist der Mann, auf dem die Verantwortung ruht. Einer, der die Bayern schon bei zwei Niederlagen gepfiffen hat. Aber das sagt ja gar nichts.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Bayern-Coach Jupp Heynckes wird zum hundertsten Male gefragt, warum er so in sich ruht. Die Reporter sollen erst einmal 68 Jahre alt werden. Dann können sie sich diese Frage vermutlich selbst beantworten.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Béla Réthy und Marcel Reif - noch zwei Männer, auf die es heute Abend ankommt. Der eine war mal der Assistent des anderen. Lange her.  ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Schrecksekunde für den FC Bayern: Bastian Schweinsteiger hält sich den Knöchel. Mitspieler Mario Mandzukic war ihm draufgestiegen. Das sollte man so 20 Minuten vor einem großen Finale an sich nicht unbedingt tun. Aber der Nationalspieler läuft nach kurzer Zeit schon wieder rund. Offenbar Glück gehabt.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Sebastian Kehl und Nuri Sahin müssen sich das Endspiel also erst einmal von außen anschauen. Als erste Optionen für eine Einwechslung. Und natürlich Julian Schieber. Aber dann muss es um den BVB schon sehr schlecht stehen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Sir Alex Ferguson freut sich auf viele Tore. Wenn es einer wissen muss, dann er. Ferguson, der Final-Experte für den FC Bayern.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Und jetzt wird Angela Merkel noch interviewt. Das übernimmt natürlich beim ZDF der Sportchef. Überraschenderweise legt sich die Bundeskanzlerin nicht auf einen persönlichen Favoriten fest.  ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Und jetzt bricht die letzte Viertelstunde an. Die schönste Viertelstunde vor einem großen Spiel. Wenn die Vorfreude fast nicht mehr zu halten ist.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Was mit Bastian Schweinsteiger ist, ist noch nicht ganz klar. Die Mandzukic-Attacke auf seinen Knöchel hat in jedem Fall wehgetan. Schweinsteiger und Knöchel - eine Beziehung mit Geschichte.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die beiden Fanblöcke sind etwas leiser geworden. Wie immer in solchen Momenten: Das Stadion hält etwas den Atem an. Der Moment, bevor die Teams einlaufen, ist gekommen. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Wembley feiert sich erst einmal selbst. Und Béla Réthy erzählt jetzt bereits die Geschichte von dem Schimmel beim ersten Wembley-Spiel 1923. Als ob er ahnt, dass er im Spiel dazu keine Zeit finden wird, um historische Anekdötchen loszuwerden.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Im Wembley werden Ritterspiele als Choreografie aufgeführt. Dortmunder und Bayern als feindliche Armeen. Die Engländer können es eben nicht sein lassen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Bayerns Urgestein Paul Breitner haben sie auch in eine Uniform gesteckt. Breitner macht mittlerweile vieles mit. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Kriegsspiele vor dem eigentlichen Match. Damit hat sich die Uefa keinen großen Gefallen getan. Es ist an den Spielern, diesen Eindruck zu korrigieren.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die beiden Vereinswappen werden aufgezogen. Die Royal Guards blasen in die Trompete. Jetzt geht es wirklich los. Die Spieler kommen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Die Champions-League-Hymne ertönt. Es bleibt auch die einzige Hymne vor dem Spiel. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Es ist soweit: Die Kapitäne Philipp Lahm und Roman Weidenfeller tauschen die Wimpel, tauschen die Händedrücke, tauschen die guten Wünsche. Ab jetzt regiert der Fußball. Und das ist auch gut so.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "0",
+                     "KOMMENTAR" : "Bayern hat Anstoß. Anpfiff. Das deutsche Finale in London, es ist eröffnet. Es soll ein Spiel werden, das im Gedächtnis bleibt.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "1",
+                     "KOMMENTAR" : "Nach 39 Sekunden erster Ballkontakt für den BVB. Dortmund fährt den ersten Angriff, aber die Bayern fangen Kuba ab.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "3",
+                     "KOMMENTAR" : "Lewandowski erstmals im Strafraum. Er erzwingt den ersten Eckball.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "4",
+                     "KOMMENTAR" : "Der BVB scheint beweisen zu wollen, warum er die Mannschaft mit den meisten frühen Toren in der Bundesliga ist. Dortmund stört früh und ist aktiver.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "6",
+                     "KOMMENTAR" : "Der FC Bayern hält sich bisher weitgehend in der eigenen Hälfte auf. Und er tut dies durchaus notgedrungen. Dortmund presst. Nächste Ecke für den BVB.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "8",
+                     "KOMMENTAR" : "München in den ersten Minuten offensiv noch unsichtbar. Aber das waren sie auch in der Liga häufiger. Und haben dann später doch immer zugeschlagen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "10",
+                     "KOMMENTAR" : "Zu diesem Zeitpunkt waren beim letzten Spiel der Bayern am Samstag in Gladbach schon vier Treffer gefallen. Hier immerhin eine Chance: Kubas Schrägschuss geht aber deutlich über das Tor.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "11",
+                     "KOMMENTAR" : "Der BVB geht ein sehr hohes Anfangstempo. Reporter sagen dann gerne: So ein Tempo kann man nicht über 90 Minuten durchhalten. Oder über 120.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "13",
+                     "KOMMENTAR" : "Lewandowski setzt sich auf der linken Seite durch, verstolpert aber. Ein paar Sekunden später macht er es besser. Neuer lenkt seinen Schuss über die Latte.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "15",
+                     "KOMMENTAR" : "Nächste Chance für den BVB: Kuba kommt im Strafraum frei zum Schuss. Neuer muss wieder ran. Nächster Eckball. Dortmund ist bisher deutlich überlegen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "16",
+                     "KOMMENTAR" : "Die Bayern mit der Anti-Taktik gegenüber dem Finale dahoam vor einem Jahr. Diesmal überlassen sie dem Gegner die Vielzahl von Eckbällen. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "17",
+                     "KOMMENTAR" : "Uli Hoeneß auf der Tribüne schaut gar nicht besonders glücklich drein. Und dabei scheint er diesmal nur ans Spiel zu denken.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "18",
+                     "KOMMENTAR" : "Bayern noch vollständig aus dem Spiel.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "19",
+                     "KOMMENTAR" : "Neuer wird warmgeschossen. Marco Reus probiert es diesmal. Na, klar, Eckball.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "20",
+                     "KOMMENTAR" : "Die Bayern wirken überrascht. Es sei denn, sie lassen den BVB erst einmal sich austoben. Wie Muhammad Ali einst gegen Foreman. Aber das wäre doch ein bisschen zu riskant. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "21",
+                     "KOMMENTAR" : "Jetzt ist Sven Bender an der Reihe. Jeder darf mal beim BVB. Und wieder ist Manuel Neuer unten. Als Gelsenkirchener nimmt der Torwart das Spiel offenbar als Derby wahr.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "24",
+                     "KOMMENTAR" : "Dortmund mittlerweile hoch überlegen. Aber es steht noch 0:0. Der BVB neigt schließlich zuweilen dazu, Torchancen liegenzulassen. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "25",
+                     "KOMMENTAR" : "Ribéry fuchtelt mit seinem Arm im Gesicht von Robert Lewandowski herum. Das kann man auch härter ahnden als nur mit einem Freistoß. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "26",
+                     "KOMMENTAR" : "Jetzt auch mal die Bayern. Mandzukic hätte fast ins Tor geköpft. Weidenfeller ist dran. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "27",
+                     "KOMMENTAR" : "Martinez kommt nach der anschließenden Ecke frei zum Kopfball. Das Leder streicht knapp übers Tor. Das sind die Szenen, die die Bayern jetzt benötigen. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "28",
+                     "KOMMENTAR" : "München verlagert die Partie nun etwas mehr vom eigenen Tor weg. Dadurch Konterchance für Reus. Sein früherer Gladbacher Kumpel Dante fällt ihn und sieht dafür <b>Gelb</b>.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "29",
+                     "KOMMENTAR" : "Plözlich taucht Arjen Robben allein vor Weidenfeller auf. Der Niederländer vergibt. Der typische Endspiel-Robben quasi.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "31",
+                     "KOMMENTAR" : "Aber die Bayern sind jetzt deutlich aktiver. Die Vorarbeit auf Robben war brillant.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "34",
+                     "KOMMENTAR" : "Die Taktik der Dortmunder, den Gegner fast zu überrennen, ist aufgegangen. Bis auf die unwesentliche Tatsache, dass ihnen kein Tor gelungen ist. Réthy hat endlich einmal Muße, über den Rockstar Klopp zu sinnieren.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "35",
+                     "KOMMENTAR" : "Lewandowski ist frei durch, bedient von Reus, allein vor Neuer. Der Ausgang dürfte bekannt sein.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "36",
+                     "KOMMENTAR" : "Erstaunlich, wie viele Fehlpässe den Bayern im Aufbauspiel unterlaufen. Trotzdem kommt Robben auf Müller-Pass durch. Er zögert aber zu lange. Hummels klärt.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "37",
+                     "KOMMENTAR" : "Die Eckbälle der Bayern sind zwingender. Müller rutscht der Ball über den Scheitel, dadurch rollt das Leder am Tor vorbei.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "38",
+                     "KOMMENTAR" : "Ein aufregendes Spiel bisher, geprägt von zahlreichen Torgelegenheiten. Immer schwer zu sagen, ob ein Finale würdig ist. Aber es ist viel los.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "40",
+                     "KOMMENTAR" : "Schmelzer checkt Thomas Müller weg. Rizzoli lässt die Spieler gewähren.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "41",
+                     "KOMMENTAR" : "Marco Reus versucht sich wieder auf dem Flügel. Der frühere Gladbacher ist bisher überzeugend. Sein Schuss aus spitzem Winkel ist es weniger.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "42",
+                     "KOMMENTAR" : "Robben again. Erneut steht er völlig frei vor Weidenfeller und schießt den Keeper an.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "43",
+                     "KOMMENTAR" : "Robben sollte möglicherweise heute keine Elfmeter schießen. Frei vor Weidenfeller liegt ihm nicht.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "44",
+                     "KOMMENTAR" : "Die erste Halbzeit neigt sich dem Ende zu. Was die Bayern mittlerweile bedauern dürften. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Ohne jede Nachspielzeit pfeift Rizzoli die erste Hälfte ab. Tore sind nicht gefallen, aber sonst war viel drin. So etwas nennt sich: eine intensiv geführte Partie. Wohl wahr.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Zwei starke Torleute haben das Spiel bisher geprägt. Die Engländer im Publikum werden seufzen. Sehr laut.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Bei den Bayern spielen bisher einige unter Form. Das fängt bei Ribéry an und hört bei Dante auf. Auch Schweinsteiger und Müller sind längst noch nicht auf ihrem Top-Niveau. Aber bis jetzt ist das ja noch ohne Schaden geblieben.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Das ZDF zeigt noch einmal den weltweit längsten Schal, den Hardcore-Fans dem FC Bayern gestrickt haben. Eine Motivationshilfe war er offenbar noch nicht.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Die Statistiker haben schnell nachgerechnet: Robben hat in Champions-League-Endspielen bisher 24 mal aufs Tor geschossen. Tore dabei? Bisher nicht.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "45",
+                     "KOMMENTAR" : "Die Spieler sind zurück. Jetzt gilt es. Die zweite Halbzeit.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "46",
+                     "KOMMENTAR" : "Pyrotechnik in der Bayern-Kurve. Und in der nächsten Sekunde brennt es schon wieder im Münchner Strafraum. Aber Lewandowski, der ein gutes Spiel macht, kommt nicht durch. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "47",
+                     "KOMMENTAR" : "Ribéry rennt Reus um. Aber die Freistoß-Entfernung ist an sich zu weit. Reus versucht es trotzdem, und man hätte ihm vorher sagen können, dass das nichts wird. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "50",
+                     "KOMMENTAR" : "Wieder schenkt Ribéry einen einfachen Ball im Mittelfeld ab. Es ist nicht die Partie des Franzosen. Bisher.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "51",
+                     "KOMMENTAR" : "Dortmund auch zu Beginn der zweiten Hälfte wacher, aggressiver, mutiger. Aber auch wieder bislang ohne Resultat.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "52",
+                     "KOMMENTAR" : "Jetzt schnell schreiben, bevor es gleich nicht mehr stimmt: Den Bayern fehlt ein Götze.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "53",
+                     "KOMMENTAR" : "Thomas Müller wird von Robben im Strafraum geschickt. Hummels kocht ihn ab. Müller ohne die von ihm bekannte Effektivität. Bisher.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "54",
+                     "KOMMENTAR" : "Der einzige, den das Spiel tatsächlich zu langweilen scheint, ist Uefa-Boss Platini. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "56",
+                     "KOMMENTAR" : "Hummels merkt man nichts von seiner Blessur aus der Vorwoche an. Der Abwehrchef der Dortmunder gibt sich extrem souverän. Ribéry hat wieder keine Chance gegen ihn.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "58",
+                     "KOMMENTAR" : "Die Bayern versuchen, Zugriff auf die Partie zu bekommen. Aber so schwer haben sie sich in dieser Spielzeit noch nicht getan wie heute.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "59",
+                     "KOMMENTAR" : "Ecken bringen bei den Bayern ständig Gefahr. Martinez ist selbst überrascht, so frei zum Kopfball zu kommen. Weidenfeller pflückt herunter und bedankt sich.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "60",
+                     "KOMMENTAR" : "<b>Tooooooor.</b> Für Bayern.",
+                     "TYP" : "TOR"
+                  },
+                  {
+                     "MINUTE" : "60",
+                     "KOMMENTAR" : "Manzukic hats gemacht. Die Dortmunder Abwehr schläft, Robben flankt, Mandzukic drückt ein.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "61",
+                     "KOMMENTAR" : "So schnell kann es kommen. Eigentlich war es die erste Torgelegenheit für die Bayern in der zweiten Hälfte. Aber so sind sie eben. Eine halbe Stunde bleibt dem BVB.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "62",
+                     "KOMMENTAR" : "Auf einmal spricht alles für die Münchner. Und wenn es so bliebe, sagt jeder: taktisch alles richtig gemacht. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "64",
+                     "KOMMENTAR" : "Neven Subotic lässt seinem Frust mit einem Check gegen Ribéry freien Raum. Nicht mal Freistoß, wieder keine Karte.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "66",
+                     "KOMMENTAR" : "Dortmund wirkt, genau, paralysiert. Das Team muss sich erst einmal schütteln.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "67",
+                     "KOMMENTAR" : "Elfmeter für Dortmund!",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "67",
+                     "KOMMENTAR" : "Die beiden Ex-Gladbacher Dante und Reus geraten im Strafraum aneinander. Klare Sache für Rizzoli. Und für alle anderen auch.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "67",
+                     "KOMMENTAR" : "Nicht Lewandowski tritt an, sondern Gündogan.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "68",
+                     "KOMMENTAR" : "<b>Toooooor!</b> Ganz cool, ganz souverän. Alles wieder offen.",
+                     "TYP" : "TOR"
+                  },
+                  {
+                     "MINUTE" : "69",
+                     "KOMMENTAR" : "Gündogan macht ohnehin eine Riesenpartie. Es ist Farbe drin! Ein großes Spiel.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "70",
+                     "KOMMENTAR" : "Es geht hin und her. Richtig schön, wenn man kein expliziter Fan dieser beiden Teams ist. Für die BVB- und Bayern-Anhänger ist es natürlich die Hölle.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "71",
+                     "KOMMENTAR" : "Unglaubliche Rettungstat von Subotic. Er kratzt einen Müller-Schuss von der Linie. Wahnsinnstat.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "72",
+                     "KOMMENTAR" : "Robben hätte den Ball nur eindrücken müssen. Subotic bekommt jetzt ein Standbild auf dem Dortmunder Friedensplatz.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "73",
+                     "KOMMENTAR" : "<b>Doppel-Gelb</b>: Ribéry und Großkreutz geraten aneinander. Bei den beiden ist klar, dass es nur mit einer Karte enden konnte.",
+                     "TYP" : "GELB"
+                  },
+                  {
+                     "MINUTE" : "74",
+                     "KOMMENTAR" : "Das Spiel ist jetzt eine wilde Jagd. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "75",
+                     "KOMMENTAR" : "Schlussviertelstunde. Atemholen verboten. Jetzt prüft Alaba Weidenfeller. Der lenkt den Distanzschuss zur Ecke ab.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "76",
+                     "KOMMENTAR" : "Ribéry balanciert am Feldverweis. Er lamentiert sehr viel.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "78",
+                     "KOMMENTAR" : "Jetzt pressen die Bayern. Nur keine Verlängerung, scheint ihre Devise. Klar am Drücker.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "79",
+                     "KOMMENTAR" : "Lewandowski tritt gegen Boateng nach. Auch das ist an sich Rot. Aber Rizzoli hat es nicht gesehen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "80",
+                     "KOMMENTAR" : "Ribéry, Dante, Lewandowski - sie alle sollten Kerzen anzünden, dass sie noch auf dem Platz stehen dürfen. Rizzoli will das hier mit 22 Leuten zu Ende bringen. Wird schwer.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "82",
+                     "KOMMENTAR" : "Bei den Dortmundern geht jetzt die Angst um. Sie ziehen sich ganz weit zurück. So etwas geht selten gut. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "83",
+                     "KOMMENTAR" : "Schweinsteiger versucht sich aus der Distanz nach einem Eckball. Der Ball entschwindet im Londoner Nachthimmel.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "84",
+                     "KOMMENTAR" : "Robben bettelt um die Gelbe Karte, reißt erst Gündogan um und schießt dann den Ball weg. Aber da hat er die Rechnung ohne Rizzoli gemacht.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "85",
+                     "KOMMENTAR" : "Noch fünf Minuten zu spielen, und es hat noch keinen einzigen Wechsel gegeben.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "87",
+                     "KOMMENTAR" : "Schweinsteiger hält drauf und zielt diesmal erheblich besser. Weidenfeller hat wie immer die Finger dran.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "88",
+                     "KOMMENTAR" : "<b>Toooor</b> Robben!!!",
+                     "TYP" : "TOR"
+                  },
+                  {
+                     "MINUTE" : "89",
+                     "KOMMENTAR" : "Was für eine Geschichte.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "89",
+                     "KOMMENTAR" : "Ribéry spielt sich irgendwie am Strafraum durch, Robben ist frei, und diesmal hat er die Nerven. Elegant schiebt er den Ball an Weidenfeller vorbei. Ist das der Sieg? ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Klopp versucht, was er kann. Kuba und Bender gehen, Schieber und Sahin sind drin. Heynckes reagiert mit Luiz Gustavo für Ribéry.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Schieber schießt gleich mal, aber das ist für Neuer wirklich kein Problem. Drei Minuten Nachspielzeit.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Die Dortmunder wirken verzweifelt. Man kann es ihnen nicht verdenken. Aber es zeichnete sich ab. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Aus! Das Spiel ist vorbei, und der FC Bayern München ist der Sieger der Fußball-Champions-League 2013. Man kann nur gratulieren. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Die BVB-Spieler liegen am Boden, die Bayern verschwinden in einer riesigen Jubeltraube. Arjen Robben kann die Tränen nicht verbergen. Großes Kompliment an die Verlierer, aber die Bayern waren in der Schlussphase einfach stärker.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Jetzt wird auf Bayern-Seite nur noch gejubelt. Robben, ausgerechnet Robben. Über den schon geredet wurde, dass er die Bayern verlassen solle. Die BVB-Spieler stehen mit leeren Blicken daneben. Sie können es nicht fassen, so kurz vor dem Ende noch verloren zu haben. ",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Jupp Heynckes, Thomas Müller, Bastian Schweinsteiger - alle liegen sich in den Armen. Nach zwei Niederlagen 2010 und 2012 haben sie es geschafft. Das Finaltrauma gegen Chelsea: Spätestens jetzt redet niemand mehr darüber.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Die Dortmunder applaudieren artig. Mehr können sie nicht tun. Sie waren sehr nah dran.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Matthias Sammer steht ganz relaxed mit den Händen in den Hosentaschen da und sagt: \"Die Emotionen schießen hoch.\" Für alle anderen gilt das tatsächlich.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : " 90",
+                     "KOMMENTAR" : "Arjen Robben muss die Frage beantworten: \"Was geht in Ihnen vor?\" Er kann nichts anders sagen als: \"Unglaublich\".",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Robben sagt: \"Ich bin ruhig geblieben und habe auf meine Chance gewartet.\" Sie kam in der 89. Minute.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Die Dortmunder holen sich ihre Silbermedaillen ab. Sie werden eine ganze Zeit brauchen, um sie zu wertschätzen.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Dortmund war ein großer Gegner.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Während die Verlierer noch mit einem Händedruck der Kanzlerin vorlieb nehmen müssen, tanzen die Sieger schon im Kreis.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Und jetzt kommen die Sieger. Jupp Heynckes ist spätestens jetzt ein ganz Großer in Europa, in einem Atemzug mit Ernst Happel, Mourinho, Hitzfeld. Die ebenfalls zweimal die Champions League für sich entschieden.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Niemand wird es in diesem Moment wohl Jupp Heynckes nicht gönnen. Das bringt nicht einmal Anthony Yeboah fertig. Es ist die Krönung eines beeindruckenden Lebenswerks als Spieler und Trainer.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Und gleich der Moment, wo der Kapitän die Trophäe in die Höhe stemmt. Höhepunkt eines Fußballerlebens.",
+                     "TYP" : "KOMMENTAR"
+                  },
+                  {
+                     "MINUTE" : "90",
+                     "KOMMENTAR" : "Mit den Tränen von Robert Lewandowski und dem Jubel des Uli Hoeneß mit dem Pott verabschieden wir uns von diesem denkwürdigen Fußballabend. Ich hoffe, es hat Spaß gemacht, auch den BVB-Fans. Eine gute Nacht!",
+                     "TYP" : "KOMMENTAR"
+                  }
+               ]
+            },
+            "SPIELSTAND_HEIM" : "1",
+            "SPIELSTAND_GAST" : "2"
+         },
+         "SPIELSTAND" : {
+            "BEENDET" : "JA",
+            "content" : "1:2",
+            "STATUS" : "ENDSTAND",
+            "ENDSTAND" : "1:2",
+            "HALBZEIT" : "0:0",
+            "MINUTE" : "90+4",
+            "PHASE" : "ENDE 2. HALBZEIT",
+            "ELFMETERSCHIESSEN" : "",
+            "VERLAENGERUNG" : ""
+         },
+         "GRUPPE" : "",
+         "GAST" : {
+            "VEREINID" : "14",
+            "TRAINER" : "Jupp Heynckes",
+            "NATION" : "DEU",
+            "content" : "Bayern München",
+            "TRAINERID" : "2438"
+         },
+         "AUFSTELLUNGGAST" : {
+            "SPIELER" : [
+               {
+                  "POSITION" : "TORWART",
+                  "SPIELERID" : "30669",
+                  "content" : "Neuer"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "26870",
+                  "content" : "Lahm"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "39295",
+                  "content" : "Boateng"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "33694",
+                  "content" : "Dante"
+               },
+               {
+                  "POSITION" : "ABWEHR",
+                  "SPIELERID" : "57598",
+                  "content" : "Alaba"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "41496",
+                  "content" : "Javi Martinez"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "27701",
+                  "content" : "Schweinsteiger"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "28673",
+                  "content" : "Robben"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "39317",
+                  "content" : "T. Müller"
+               },
+               {
+                  "POSITION" : "MITTELFELD",
+                  "SPIELERID" : "39686",
+                  "content" : "Ribery"
+               },
+               {
+                  "POSITION" : "STURM",
+                  "SPIELERID" : "46110",
+                  "content" : "Mandzukic"
+               }
+            ]
+         },
+         "DATUM" : "25.5.2013",
+         "SPIELTAGSNAME" : "Finale in London",
+         "WETTBEWERB" : "CHAMPLEAGUE"
+      }
+   }
+}

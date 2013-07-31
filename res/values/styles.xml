@@ -24,5 +24,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    
+    <color name="very_light_gray">#EEEEEE</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="middle_gray">#BBBBBB</color>
+    <color name="dark_gray">#666666</color>
+    <color name="dark_red">#FF0000</color>
+    <color name="transparent_black">#88000000</color>
+    <color name="bg_honeycombs">#E6E6E6</color>
 
 </resources>

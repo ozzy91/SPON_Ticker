@@ -1,12 +1,12 @@
-package com.ipol.sponticker;
+package com.ipol.sponticker.gui;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-public class GoalText extends TextView {
+public class GoalTextView extends TextView {
 
-	public GoalText(Context context, AttributeSet attrs) {
+	public GoalTextView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 	

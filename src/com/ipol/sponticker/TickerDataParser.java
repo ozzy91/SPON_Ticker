@@ -12,10 +12,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.ipol.sponticker.model.EventType;
-import com.ipol.sponticker.model.Match;
 import com.ipol.sponticker.model.TickerEvent;
+import com.ipol.sponticker.model.TickerMatch;
 
-public class JSonParser {
+public class TickerDataParser {
 
 	private static final String TAG_PAARUNGEN = "PAARUNGEN";
 	private static final String TAG_PAARUNG = "PAARUNG";
@@ -25,6 +25,7 @@ public class JSonParser {
 	private static final String TAG_STADIUM = "STADION";
 	private static final String TAG_HOME_TEAM = "HEIM";
 	private static final String TAG_GUEST_TEAM = "GAST";
+	private static final String TAG_TEAM_ID = "VEREINID";
 	private static final String TAG_VISITORS = "ZUSCHAUER";
 	private static final String TAG_STANDING = "SPIELSTAND";
 	private static final String TAG_NAME = "content";
@@ -39,19 +40,25 @@ public class JSonParser {
 	private static final String TAG_SUBSTITUTE_PLAYER = "SPEZIFISCH";
 	private static final String TAG_SCORE = "SPIELSTAND";
 
-	private Match match;
+	private TickerMatch match;
 
-	public JSonParser() {
-		match = new Match();
+	public TickerDataParser() {
+		match = new TickerMatch();
 	}
 
+	/**
+	 * Create a JSONObject for a JSON file represented by an InputStream.
+	 * 
+	 * @param stream
+	 *            The InputStream of the JSON file.
+	 * @return The JSONObect that represents the JSON file.
+	 */
 	public JSONObject getJSON(InputStream stream) {
 
 		JSONObject jsonObject = null;
 
 		try {
-			BufferedReader reader = new BufferedReader(new InputStreamReader(stream,
-					"ISO-8859-1"), 8);
+			BufferedReader reader = new BufferedReader(new InputStreamReader(stream, "ISO-8859-1"), 8);
 			StringBuilder sb = new StringBuilder();
 
 			String line = null;
@@ -70,13 +77,19 @@ public class JSonParser {
 		return jsonObject;
 	}
 
+	/**
+	 * Creates a JSONArray for all ticker events in the JSONObject parameter.
+	 * 
+	 * @param object
+	 *            The JSONObject holding the array of ticker events.
+	 * @return A JSONArray with all the ticker events.
+	 */
 	public JSONArray getEventArray(JSONObject object) {
 
 		JSONArray array = null;
 
 		try {
-			array = object.getJSONObject(TAG_PAARUNGEN).getJSONObject(TAG_PAARUNG)
-					.getJSONObject(TAG_MATCH_EVENTS).getJSONArray(TAG_EVENTS);
+			array = object.getJSONObject(TAG_PAARUNGEN).getJSONObject(TAG_PAARUNG).getJSONObject(TAG_MATCH_EVENTS).getJSONArray(TAG_EVENTS);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -84,6 +97,13 @@ public class JSonParser {
 		return array;
 	}
 
+	/**
+	 * Parses all Events from the JSON file and creates a list of them.
+	 * 
+	 * @param jsonEvents
+	 *            The JSONArray of the ticker events
+	 * @return An ArrayList with all the created TickerEvents
+	 */
 	public ArrayList<TickerEvent> getEvents(JSONArray jsonEvents) {
 
 		ArrayList<TickerEvent> events = new ArrayList<TickerEvent>();
@@ -98,39 +118,48 @@ public class JSonParser {
 
 				// check if the time is in the added time
 				if (minute.contains("+")) {
-					event.setMinute(Integer.valueOf(minute.substring(0,
-							minute.indexOf("+"))));
-					event.setAddedTime(Integer.valueOf(minute.substring(minute
-							.indexOf("+") + 1)));
+					event.setMinute(Integer.valueOf(minute.substring(0, minute.indexOf("+"))));
+					event.setAddedTime(Integer.valueOf(minute.substring(minute.indexOf("+") + 1)));
 				} else {
 					event.setMinute(Integer.valueOf(minute));
 				}
 
 				if (jsonEvent.has(TAG_TYPE)) {
 					// set the player
-					event.setPlayer(jsonEvent.getJSONObject(TAG_PLAYER).getString(
-							TAG_NAME));
-					event.setTeam(jsonEvent.getString(TAG_TEAM));
+					try {
+						event.setPlayer(jsonEvent.getJSONObject(TAG_PLAYER).getString(TAG_NAME));
+					} catch (JSONException e) {
+						event.setPlayer(jsonEvent.getString(TAG_PLAYER));
+					} finally {
+						event.setTeam(jsonEvent.getString(TAG_TEAM));
 
-					// set the event type
-					String type = jsonEvent.getString(TAG_TYPE);
+						// set the event type
+						String type = jsonEvent.getString(TAG_TYPE);
 
-					if (type.equals(TickerEvent.TYPE_GOAL)) {
-						event.setType(EventType.GOAL);
-						event.setScore(jsonEvent.getString(TAG_SCORE));
-					}
-					if (type.equals(TickerEvent.TYPE_RED)) {
-						event.setType(EventType.RED);
-					}
-					if (type.equals(TickerEvent.TYPE_SUBSTITUTE)) {
-						event.setType(EventType.SUBSTITUTE);
-						event.setOtherPlayer(jsonEvent.getString(TAG_SUBSTITUTE_PLAYER));
-					}
-					if (type.equals(TickerEvent.TYPE_YELLOW)) {
-						event.setType(EventType.YELLOW);
-					}
-					if (type.equals(TickerEvent.TYPE_YELLOW_RED)) {
-						event.setType(EventType.YELLOWRED);
+						if (type.equals(TickerEvent.TYPE_GOAL)) {
+							event.setType(EventType.GOAL);
+							event.setScore(jsonEvent.getString(TAG_SCORE));
+						}
+						if(type.equals(TickerEvent.TYPE_OWNGOAL)){
+							event.setType(EventType.OWNGOAL);
+							event.setScore(jsonEvent.getString(TAG_SCORE));
+						}
+						if (type.equals(TickerEvent.TYPE_RED)) {
+							event.setType(EventType.RED);
+						}
+						if (type.equals(TickerEvent.TYPE_SUBSTITUTE)) {
+							event.setType(EventType.SUBSTITUTE);
+							event.setOtherPlayer(jsonEvent.getString(TAG_SUBSTITUTE_PLAYER));
+						}
+						if (type.equals(TickerEvent.TYPE_YELLOW)) {
+							event.setType(EventType.YELLOW);
+						}
+						if (type.equals(TickerEvent.TYPE_YELLOW_RED)) {
+							event.setType(EventType.YELLOWRED);
+						}
+						if(type.equals(TickerEvent.TYPE_PENALTY)){
+							event.setType(EventType.PENALTY);
+						}
 					}
 				} else {
 					event.setType(EventType.NORMAL);
@@ -143,20 +172,27 @@ public class JSonParser {
 		return events;
 	}
 
-	public Match getMatch(JSONObject object) {
+	/**
+	 * Loads all relevant information about the match and creates a new
+	 * TickerMatch Object.
+	 * 
+	 * @param object
+	 *            The JSONObject that holds the information of the match.
+	 * @return A TickerMatch with the data from the JSON file.
+	 */
+	public TickerMatch getMatch(JSONObject object) {
 
 		JSONObject matchObject;
 		try {
 			matchObject = object.getJSONObject(TAG_PAARUNGEN).getJSONObject(TAG_PAARUNG);
-			match.setGuestTeam(matchObject.getJSONObject(TAG_GUEST_TEAM).getString(
-					TAG_NAME));
-			match.setHomeTeam(matchObject.getJSONObject(TAG_HOME_TEAM)
-					.getString(TAG_NAME));
+			match.setGuestTeam(matchObject.getJSONObject(TAG_GUEST_TEAM).getString(TAG_NAME));
+			match.setGuestId(matchObject.getJSONObject(TAG_GUEST_TEAM).getString(TAG_TEAM_ID));
+			match.setHomeTeam(matchObject.getJSONObject(TAG_HOME_TEAM).getString(TAG_NAME));
+			match.setHomeId(matchObject.getJSONObject(TAG_HOME_TEAM).getString(TAG_TEAM_ID));
 			match.setResult(matchObject.getJSONObject(TAG_SCORE).getString(TAG_NAME));
 			match.setStadium(matchObject.getString(TAG_STADIUM));
 			if (matchObject.getJSONObject(TAG_VISITORS).has(TAG_NAME))
-				match.setVisitors(matchObject.getJSONObject(TAG_VISITORS)
-						.getInt(TAG_NAME));
+				match.setVisitors(matchObject.getJSONObject(TAG_VISITORS).getInt(TAG_NAME));
 			matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);
 
 			String minute = matchObject.getJSONObject(TAG_STANDING).getString(TAG_MINUTE);

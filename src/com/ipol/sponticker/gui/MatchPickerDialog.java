@@ -1,4 +1,4 @@
-package com.ipol.sponticker;
+package com.ipol.sponticker.gui;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import android.widget.ListView;
 
 public class MatchPickerDialog extends DialogFragment {
 	
-	interface Callback{
+	public interface Callback{
 		public void matchClicked(String filename);
 	}
 	

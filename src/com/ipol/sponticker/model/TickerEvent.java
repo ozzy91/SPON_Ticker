@@ -1,5 +1,6 @@
 package com.ipol.sponticker.model;
 
+
 public class TickerEvent implements Comparable<TickerEvent> {
 	
 	public static final String TYPE_GOAL = "TOR";
@@ -7,6 +8,8 @@ public class TickerEvent implements Comparable<TickerEvent> {
 	public static final String TYPE_RED = "ROT";
 	public static final String TYPE_YELLOW_RED = "GELBROT";
 	public static final String TYPE_SUBSTITUTE = "EINWECHSLUNG";
+	public static final String TYPE_PENALTY = "ELFMETERGEPFIFFEN";
+	public static final String TYPE_OWNGOAL = "EIGENTOR";
 	
 	private int minute;
 	private int addedTime;
@@ -81,13 +84,13 @@ public class TickerEvent implements Comparable<TickerEvent> {
 		this.type = type;
 	}
 
-	@Override
 	public int compareTo(TickerEvent another) {
+		System.out.println(this.minute + " verglichen mit " +another.minute);
 		if (this.minute < another.minute)
 			return 1;
 		if (this.minute > another.minute)
 			return -1;
-		if (this.minute == another.minute && this.addedTime != 0){
+		if (this.minute == another.minute && (this.addedTime != 0 || another.addedTime != 0)){
 			if (this.addedTime < another.addedTime)
 				return 1;
 			if (this.addedTime > another.addedTime)

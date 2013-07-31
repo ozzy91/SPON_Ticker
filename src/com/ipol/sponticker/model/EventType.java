@@ -6,5 +6,7 @@ public enum EventType {
 	YELLOW,
 	RED,
 	YELLOWRED,
-	SUBSTITUTE
+	SUBSTITUTE,
+	PENALTY,
+	OWNGOAL
 }

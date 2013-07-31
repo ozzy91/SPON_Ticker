@@ -3,7 +3,9 @@ package com.ipol.sponticker;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.ipol.sponticker.MatchPickerDialog.Callback;
+import com.ipol.sponticker.gui.MatchPickerDialog;
+import com.ipol.sponticker.gui.TickerFragment;
+import com.ipol.sponticker.gui.MatchPickerDialog.Callback;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,7 +31,6 @@ public class TickerActivity extends Activity implements Callback{
 		
 	}
 
-	@Override
 	public void matchClicked(String filename) {
 		System.out.println(filename);
 		

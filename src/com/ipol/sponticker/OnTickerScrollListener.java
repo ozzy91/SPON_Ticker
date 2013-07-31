@@ -3,24 +3,24 @@ package com.ipol.sponticker;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 
+import com.ipol.sponticker.gui.TimelineView;
 import com.ipol.sponticker.model.TickerEvent;
 
-public class TickerScrollListener implements OnScrollListener {
+public class OnTickerScrollListener implements OnScrollListener {
 
-	private Timeline timeline;
+	private TimelineView timeline;
 	private boolean isIdle = true;
 
-	public TickerScrollListener(Timeline timeline) {
+	public OnTickerScrollListener(TimelineView timeline) {
 
 		this.timeline = timeline;
 	}
 
-	@Override
 	public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
 			int totalItemCount) {
+		
 
 		if (!isIdle) {
-			System.out.println("Scroll");
 
 			TickerEvent firstEvent = (TickerEvent) view.getAdapter().getItem(
 					firstVisibleItem + 1);
@@ -41,9 +41,7 @@ public class TickerScrollListener implements OnScrollListener {
 		}
 	}
 
-	@Override
 	public void onScrollStateChanged(AbsListView view, int scrollState) {
-		System.out.println(scrollState);
 		switch (scrollState) {
 		case SCROLL_STATE_TOUCH_SCROLL:
 			isIdle = false;

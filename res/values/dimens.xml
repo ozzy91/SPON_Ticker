@@ -4,6 +4,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="timeline_icon_size">15dp</dimen>
-    <dimen name="timeline_thickness">6dp</dimen>
+    <dimen name="timeline_thickness">4dp</dimen>
+    <dimen name="timeline_icon_goal_touch_radius">10dp</dimen>
+    <dimen name="timeline_icon_other_touch_radius">4dp</dimen>
 
 </resources>
