@@ -1,8 +1,9 @@
 package com.ipol.sponticker.model;
 
+import java.util.Date;
 
 public class TickerEvent implements Comparable<TickerEvent> {
-	
+
 	public static final String TYPE_GOAL = "TOR";
 	public static final String TYPE_YELLOW = "GELB";
 	public static final String TYPE_RED = "ROT";
@@ -10,7 +11,7 @@ public class TickerEvent implements Comparable<TickerEvent> {
 	public static final String TYPE_SUBSTITUTE = "EINWECHSLUNG";
 	public static final String TYPE_PENALTY = "ELFMETERGEPFIFFEN";
 	public static final String TYPE_OWNGOAL = "EIGENTOR";
-	
+
 	private int minute;
 	private int addedTime;
 	private String commentary;
@@ -19,6 +20,7 @@ public class TickerEvent implements Comparable<TickerEvent> {
 	private String player;
 	private String team;
 	private EventType type;
+	private Date tickerTime;
 
 	public int getMinute() {
 		return minute;
@@ -84,17 +86,32 @@ public class TickerEvent implements Comparable<TickerEvent> {
 		this.type = type;
 	}
 
+	public Date getTickerTime() {
+		return tickerTime;
+	}
+
+	public void setTickerTime(Date tickerTime) {
+		this.tickerTime = tickerTime;
+	}
+
 	public int compareTo(TickerEvent another) {
-		System.out.println(this.minute + " verglichen mit " +another.minute);
-		if (this.minute < another.minute)
-			return 1;
-		if (this.minute > another.minute)
-			return -1;
-		if (this.minute == another.minute && (this.addedTime != 0 || another.addedTime != 0)){
-			if (this.addedTime < another.addedTime)
+		if (this.getTickerTime() != null && another.getTickerTime() != null) {
+			if (this.getTickerTime().before(another.getTickerTime()))
 				return 1;
-			if (this.addedTime > another.addedTime)
+			if (this.getTickerTime().after(another.getTickerTime()))
 				return -1;
+		} else {
+			if (this.minute < another.minute)
+				return 1;
+			if (this.minute > another.minute)
+				return -1;
+			if (this.minute == another.minute
+					&& (this.addedTime != 0 || another.addedTime != 0)) {
+				if (this.addedTime < another.addedTime)
+					return 1;
+				if (this.addedTime > another.addedTime)
+					return -1;
+			}
 		}
 		return 0;
 	}

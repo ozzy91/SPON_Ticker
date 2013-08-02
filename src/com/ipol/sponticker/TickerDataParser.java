@@ -5,7 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,11 +42,15 @@ public class TickerDataParser {
 	private static final String TAG_TEAM = "VEREIN";
 	private static final String TAG_SUBSTITUTE_PLAYER = "SPEZIFISCH";
 	private static final String TAG_SCORE = "SPIELSTAND";
+	private static final String TAG_TICKER_TIME = "TICKERZEIT";
 
 	private TickerMatch match;
+	
+	private SimpleDateFormat dateFormat;
 
 	public TickerDataParser() {
 		match = new TickerMatch();
+		dateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss", Locale.GERMANY);
 	}
 
 	/**
@@ -122,6 +129,14 @@ public class TickerDataParser {
 					event.setAddedTime(Integer.valueOf(minute.substring(minute.indexOf("+") + 1)));
 				} else {
 					event.setMinute(Integer.valueOf(minute));
+				}
+				
+				if(jsonEvent.has(TAG_TICKER_TIME)){
+					try {
+						event.setTickerTime(dateFormat.parse(jsonEvent.getString(TAG_TICKER_TIME)));
+					} catch (ParseException e) {
+						e.printStackTrace();
+					}
 				}
 
 				if (jsonEvent.has(TAG_TYPE)) {
