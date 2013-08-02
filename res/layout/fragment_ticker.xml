@@ -179,7 +179,8 @@
                 android:visibility="gone" />
         </com.ipol.sponticker.gui.TimelineView>
 
-        <ListView
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
             android:id="@+id/ticker_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -189,8 +190,12 @@
             android:divider="#000000"
             android:dividerHeight="1dp"
             android:overScrollMode="never"
-            android:scrollbars="none" >
-        </ListView>
+            android:scrollbars="none"
+            
+            ptr:ptrShowIndicator="false"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/dark_gray" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
     </RelativeLayout>
 
     <TextView

@@ -3,14 +3,14 @@ package com.ipol.sponticker;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-import android.widget.ListView;
 
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.ipol.sponticker.gui.TickerFragment;
 import com.ipol.sponticker.gui.TimelineView;
 
 public class OnTimelineTouchListener implements OnTouchListener {
 
-	private ListView list;
+	private PullToRefreshListView list;
 	private TickerFragment fragment;
 	private TimelineView timeline;
 	private float lastX;
@@ -22,7 +22,7 @@ public class OnTimelineTouchListener implements OnTouchListener {
 
 	private boolean scrollVertical;
 
-	public OnTimelineTouchListener(ListView list, TickerFragment tickerFragment,
+	public OnTimelineTouchListener(PullToRefreshListView list, TickerFragment tickerFragment,
 			TimelineView timeline) {
 
 		this.list = list;
@@ -65,13 +65,13 @@ public class OnTimelineTouchListener implements OnTouchListener {
 			// if user clicks on the 0 minutes label
 			if (touchedY < timeline.txtMinuteZero.getBottom()
 					&& touchedY > timeline.txtMinuteZero.getTop()) {
-				list.smoothScrollToPosition((list.getAdapter().getCount() - 1));
+				list.getRefreshableView().smoothScrollToPosition((list.getRefreshableView().getAdapter().getCount() - 1));
 			}
 
 			// if user clicks on the max minutes label
 			else if (touchedY < timeline.txtMinuteEnd.getBottom()
 					&& touchedY > timeline.txtMinuteEnd.getTop()) {
-				list.smoothScrollToPosition(0);
+				list.getRefreshableView().smoothScrollToPosition(0);
 			}
 			// if user clicks on the halftime break label, only if minute is
 			// after 45

@@ -17,6 +17,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.Fragment;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +27,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.handmark.pulltorefresh.library.ILoadingLayout;
+import com.handmark.pulltorefresh.library.PullToRefreshBase;
+import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.ipol.sponticker.OnTickerScrollListener;
 import com.ipol.sponticker.OnTimelineTouchListener;
 import com.ipol.sponticker.R;
@@ -36,7 +41,7 @@ import com.ipol.sponticker.model.TickerEvent;
 import com.ipol.sponticker.model.TickerMatch;
 
 public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
-	
+
 	private static final String MATCH_FILE = "CL_finale.json";
 
 	private static final int SCROLL_OFFSET_TOP = 100;
@@ -46,7 +51,7 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 	// Views
 	private View fragmentView;
-	private ListView tickerList;
+	private PullToRefreshListView tickerList;
 	private TextView txtHomeTeam;
 	private TextView txtGuestTeam;
 	private TextView txtResult;
@@ -76,7 +81,7 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 			Bundle savedInstanceState) {
 
 		fragmentView = inflater.inflate(R.layout.fragment_ticker, container, false);
-		
+
 		activity = getActivity();
 
 		InputStream is = null;
@@ -85,19 +90,15 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		parseMatch(is);
 
 		return fragmentView;
 	}
 
-	/**
-	 * Initializes variables for views. Gets all views from the activity
-	 * specified by a variable.
-	 */
 	public void init() {
 
-		tickerList = (ListView) fragmentView.findViewById(R.id.ticker_list);
+		tickerList = (PullToRefreshListView) fragmentView.findViewById(R.id.ticker_list);
 		txtHomeTeam = (TextView) fragmentView.findViewById(R.id.txt_home_team);
 		txtGuestTeam = (TextView) fragmentView.findViewById(R.id.txt_guest_team);
 		txtResult = (TextView) fragmentView.findViewById(R.id.txt_result);
@@ -108,6 +109,19 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 		timeline = (TimelineView) fragmentView.findViewById(R.id.ticker_timeline);
 		timeline.getViewTreeObserver().addOnGlobalLayoutListener(this);
+		
+		ILoadingLayout loadingLayout = tickerList.getLoadingLayoutProxy();
+		loadingLayout.setRefreshingLabel("Wird geladen...");
+		loadingLayout.setReleaseLabel("Zum Aktualisieren loslassen");
+		loadingLayout.setPullLabel("Zum Aktualisieren herunter ziehen");
+		tickerList.setOnRefreshListener(new OnRefreshListener<ListView>() {
+
+			@Override
+			public void onRefresh(PullToRefreshBase<ListView> refreshView) {
+				new RefreshTask().execute();
+			}
+			
+		});
 
 	}
 
@@ -172,7 +186,7 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 		}
 		if (exact) {
 
-			tickerList.setSelectionFromTop(index, SCROLL_OFFSET_TOP);
+			tickerList.getRefreshableView().setSelectionFromTop(index, SCROLL_OFFSET_TOP);
 
 		} else if (index != 0) {
 
@@ -183,15 +197,15 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 			int deltaLater = later - minute;
 
 			if (deltaEarlier < deltaLater) {
-				tickerList.setSelectionFromTop(index, SCROLL_OFFSET_TOP);
+				tickerList.getRefreshableView().setSelectionFromTop(index, SCROLL_OFFSET_TOP);
 			} else {
-				tickerList.setSelectionFromTop(index - 1, SCROLL_OFFSET_TOP);
+				tickerList.getRefreshableView().setSelectionFromTop(index - 1, SCROLL_OFFSET_TOP);
 			}
 		} else {
 			if (minute > events.get(0).getMinute()) {
-				tickerList.setSelection(0);
+				tickerList.getRefreshableView().setSelection(0);
 			} else {
-				tickerList.setSelection(events.size() - 1);
+				tickerList.getRefreshableView().setSelection(events.size() - 1);
 			}
 		}
 
@@ -199,7 +213,7 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 	public void scrollToEvent(TickerEvent event) {
 
-		tickerList.setSelectionFromTop(events.indexOf(event), SCROLL_OFFSET_TOP);
+		tickerList.getRefreshableView().setSelectionFromTop(events.indexOf(event), SCROLL_OFFSET_TOP);
 	}
 
 	@SuppressWarnings("deprecation")
@@ -211,7 +225,7 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 		timeline.setOnTouchListener(new OnTimelineTouchListener(tickerList,
 				TickerFragment.this, timeline));
-		tickerList.setSelection(0);
+		tickerList.getRefreshableView().setSelection(0);
 		timeline.getViewTreeObserver().removeGlobalOnLayoutListener(this);
 	}
 
@@ -241,14 +255,38 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 	@SuppressWarnings("unchecked")
 	public void setTickerData(Map<String, Object> tickerData) {
+
+		boolean matchStarted = false;
+
 		this.events = (ArrayList<TickerEvent>) tickerData.get("events");
 		this.match = (TickerMatch) tickerData.get("match");
 
 		init();
 
 		Collections.sort(events);
+
+		ArrayList<TickerEvent> adapterEvents = new ArrayList<TickerEvent>();
+
+		TickerEvent stadiumInfo = new TickerEvent();
+		stadiumInfo.setCommentary(match.getStadium());
+		adapterEvents.add(0, stadiumInfo);
+
+		TickerEvent started = new TickerEvent();
+		started.setCommentary("Anpfiff");
+
+		for (TickerEvent ev : events) {
+			if (!matchStarted && ev.getMinute() == 0) {
+				adapterEvents.add(started);
+				matchStarted = true;
+			}
+			adapterEvents.add(ev);
+		}
+
+		if (!matchStarted)
+			adapterEvents.add(started);
+
 		TickerAdapter adapter = new TickerAdapter(activity, R.layout.item_ticker_event,
-				events);
+				adapterEvents);
 		tickerList.setAdapter(adapter);
 
 		timeline.createLayout(match);
@@ -262,25 +300,25 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 
 		this.isInit = true;
 	}
-	
-	public void parseMatch(InputStream is){
-		
+
+	public void parseMatch(InputStream is) {
+
 		List<TickerEvent> events;
 		TickerMatch match;
 		HashMap<String, Object> tickerData = new HashMap<String, Object>();
-		
+
 		TickerDataParser parser = new TickerDataParser();
 		JSONObject obj = parser.getJSON(is);
 		JSONArray eventArray = parser.getEventArray(obj);
 		events = parser.getEvents(eventArray);
 		match = parser.getMatch(obj);
-		
+
 		match.setHomeShortname(match.getHomeTeam());
 		match.setGuestShortname(match.getGuestTeam());
-		
+
 		tickerData.put("events", events);
 		tickerData.put("match", match);
-	
+
 		setTickerData(tickerData);
 	}
 
@@ -388,5 +426,29 @@ public class TickerFragment extends Fragment implements OnGlobalLayoutListener {
 				}
 			});
 		}
+	}
+	
+	private class RefreshTask extends AsyncTask<Void, Void, Void> {
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void result) {
+
+			tickerList.onRefreshComplete();
+			super.onPostExecute(result);
+		}
+		
+		
 	}
 }
